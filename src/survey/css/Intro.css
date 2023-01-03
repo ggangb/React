@@ -1,0 +1,30 @@
+.full {
+  height: 670px;
+  width: 670px;
+  margin: 110px auto;
+}
+
+.full a {
+  text-decoration: none;
+}
+.intro {
+  height: 100%;
+  width: 100%;
+}
+
+.start {
+  position: relative;
+  width: 150px;
+  height: 70px;
+  margin: auto;
+  display: block;
+  border-radius: 50px;
+  background-color: rgb(97, 191, 173);
+  border-style: none;
+  color: white;
+  font-size: 30px;
+}
+
+.start a {
+  text-decoration: none;
+}

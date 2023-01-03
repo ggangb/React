@@ -1,0 +1,201 @@
+.myorderlist_wrap {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  min-height: 680px;
+  max-height: 1050px;
+}
+
+.myorderlist_stat_wrap {
+  position: relative;
+}
+
+.myorderlist_title_wrap h2 {
+  font-size: 36px;
+  height: 60px;
+  align-items: center;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+}
+
+.myorderlist_title_wrap {
+  margin-bottom: 50px;
+}
+.myorderlist_stat_wrap ul {
+  list-style: none;
+  padding-inline-start: 0;
+  border: 2px solid #e5e5e5;
+  border-radius: 15px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 95px;
+  cursor: default;
+}
+
+.myorderlist_stat_wrap ul li {
+  background-color: white;
+  width: 90px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border: 2px solid #e5e5e5;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.myorderlist_stat {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.myorderlist_stat_count {
+  font-size: 24px;
+}
+/* ============= 주문리스트 ================= */
+
+.myorderlist_order_wrap {
+  min-height: 400px;
+}
+
+/* 테이블 간격 */
+
+.myorderlist_order_wrap table td:nth-child(1) {
+  width: 130px;
+}
+.myorderlist_order_wrap table td:nth-child(2) {
+  width: 150px;
+}
+
+.myorderlist_order_wrap table td:nth-child(3) {
+  text-align: center;
+  width: 140px;
+}
+.myorderlist_order_wrap table td:nth-child(4) {
+  width: 80px;
+}
+
+.myorderlist_order_wrap table td:nth-child(6) {
+  width: 80px;
+}
+
+/* 테이블 몸통 */
+
+.myorderlist_order_wrap tbody td:nth-child(3) {
+  font-weight: 300;
+  color: gray;
+}
+
+.myorderlist_order_wrap tbody td:nth-child(4) {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.myorderlist_order_wrap tbody td:nth-child(5) {
+  font-weight: 500;
+}
+
+.myorderlist_order_wrap tbody td:nth-child(6) {
+  font-weight: 500;
+  color: #706f6f;
+}
+
+.myorderlist_order_wrap table {
+  margin-top: 10px;
+  border-collapse: collapse;
+  border-style: hidden;
+  box-shadow: 0 0 0 2px #e5e5e5;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.myorderlist_order_wrap a {
+  cursor: pointer;
+}
+
+.myorderlist_order_wrap thead td {
+  padding-top: 7px;
+}
+
+.myorderlist_order_wrap thead {
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  height: 30px;
+}
+
+.myorderlist_order_wrap tbody tr {
+  border-top: 2px solid #e5e5e5;
+  width: 100%;
+  height: 120px;
+}
+
+.myorderlist_item_info_wrap {
+  height: 120px;
+  text-align: left;
+  position: relative;
+  display: table;
+}
+.myorderlist_order_wrap tr {
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.myorderlist_order_wrap tbody td {
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 14px;
+  height: 130px;
+  padding: 3px 0;
+  font-weight: 300;
+}
+
+.myorderlist_item_info_td:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.myorderlist_item_name {
+  width: 100%;
+  vertical-align: middle;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.myorderlist_item_img {
+  display: table-cell;
+  width: 120px;
+  height: 120px;
+  border-radius: 15px;
+}
+
+.myorderlist_order_btn_td button {
+  width: 100px;
+  height: 30px;
+  border-radius: 30px;
+  border: 2px solid #e5e5e5;
+  background-color: white;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.myorderlist_order_btn_td {
+  width: 110px;
+}
+
+.myorderlist_order_btn_td button:hover {
+  cursor: pointer;
+  background-color: #b5d692;
+}
+
+.myorderlist_order_btn_td button:active {
+  background-color: #b5d692;
+  color: white;
+}

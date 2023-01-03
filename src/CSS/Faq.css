@@ -1,0 +1,36 @@
+.faq-modal {
+    width:100%;
+}
+.faq-modal td {
+    padding: 13px 10px 15px 18px;
+    width: 100%;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.faq-modal-cont {
+    width: 80%;
+    margin-left : 100px;
+    text-align: left;
+}
+.faq-comment {
+    width: 80%;
+    margin-left : 100px;
+    border-top: 2px solid #dbdbdb;
+    padding-top: 15px;
+    text-align: left;
+}
+
+.faq-modal td {
+    padding: 13px 10px 15px 18px;
+    background-color:#f8f8f8;
+}
+
+.faq-modal-table {
+    width: 100%;
+}
+
+.faq-content, .admin-comment {
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+}

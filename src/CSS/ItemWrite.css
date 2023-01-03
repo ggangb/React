@@ -1,0 +1,129 @@
+.write_item_wrap {
+  width: 1200px;
+  margin: auto;
+}
+
+.write_item_form {
+  width: 900px;
+  height: 1000px;
+  margin: 80px auto;
+}
+
+.write_item_title {
+  width: 100%;
+  height: 40px;
+}
+
+.serviceqna_board_title h3 {
+  float: left;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.item_board_write {
+  width: 100%;
+  height: auto;
+}
+
+.item_board_box {
+  margin: 0 10px 0 0;
+  padding: 0;
+}
+
+.item_board_box th {
+  padding: 13px 0 13px 25px;
+  font-weight: bold;
+  border-bottom: 1px solid #dbdbdb;
+  background: #fbfbfb;
+  text-align: left;
+  vertical-align: top;
+  width: 15%;
+}
+.item_board_box table {
+  width: 100%;
+  margin: 0 0 20px 0;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-top: 1px solid #999999;
+}
+.serviceqna_board_box tr {
+  width: 100%;
+}
+
+.write_select select {
+  width: 60px;
+}
+
+.item_write_title {
+  color: black;
+  width: 500px;
+  border: none;
+}
+
+.item_write_exp {
+  color: black;
+  width: 150px;
+  border: none;
+}
+
+.item_board_box td {
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 10px;
+  width: 100%;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.ck.ck-editor__editable:not(.ck-editor__nested-editable) {
+  min-height: 400px;
+  margin-bottom: 20px;
+}
+
+.item_write_btn_box {
+  text-align: center;
+}
+
+.serviceqna_btn_del {
+  width: 100px;
+  height: 50px;
+  background-color: white;
+  font-weight: bold;
+  border: 2px solid #e5e5e5;
+  border-radius: 30px;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.serviceqna_btn {
+  width: 100px;
+  height: 50px;
+  background-color: white;
+  font-weight: bold;
+  border: 2px solid #e5e5e5;
+  border-radius: 30px;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+}
+.serviceqna_btn:hover {
+  background-color: #b5d692;
+  color: white;
+}
+
+.serviceqna_btn_del:hover {
+  background-color: red;
+  color: white;
+}
+.serviceqna_btn:active {
+  background-color: #b5d692;
+  color: white;
+}
+
+.serviceqna_btn_del:active {
+  background-color: red;
+  color: white;
+}

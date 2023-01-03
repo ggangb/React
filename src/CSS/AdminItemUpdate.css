@@ -1,0 +1,33 @@
+.admin_item_update {
+    width: 650px;
+    height: auto;
+}
+
+.update_item_title {
+    width: 650px;
+    height: 40px;
+}
+
+.update_item_wrap {
+    width: 650px;
+    margin: auto;
+}
+
+.update_item_form {
+    display: contents;
+    margin: 80px auto;
+}
+.update_item_title h3 {
+    margin-bottom: 30px;
+}
+
+.item_board_box table {
+    margin : 0 auto;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+
+
+

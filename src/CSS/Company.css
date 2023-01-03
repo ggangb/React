@@ -1,0 +1,113 @@
+.company_slogan {
+    background: url(../Img/company4.jpg) no-repeat center;
+    background-size: cover;
+    display: table;
+    width: 100%;
+    height: 420px;
+    text-align: center;
+}
+
+.company_slogan div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.company_slogan h2 {
+    font-size: 46px;
+    line-height: 56px;
+    color: #fff;
+    letter-spacing: 0.1em;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+.company_slogan span {
+    display: block;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+    letter-spacing: 1.6em;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+.company_contents {
+    padding-top: 135px;
+    padding-bottom: 0;
+}
+
+.company_contents h3 {
+    position: relative;
+    display: block;
+    padding-bottom: 51px;
+    margin-bottom: 50px;
+    font-size: 42px;
+    line-height: 52px;
+    color: #111;
+    font-weight: 600;
+    letter-spacing: -0.05em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.company_contents_sec1 {
+    text-align: Center;
+    padding: 0 0 90px;
+}
+
+.company_layout {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1480px;
+    box-sizing: border-box;
+}
+
+.company_layout .company_layout_txt1 {
+    position: relative;
+    display: inline-block;
+    font-size: 46px;
+    line-height: 56px;
+    color: #111;
+    letter-spacing: -0.05em;
+    font-weight: 400;
+}
+
+.company_layout .company_layout_txt1::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 12px;
+    bottom: 4px;
+    left: 0;
+    background: #d8cebf;
+    z-index: -1;
+}
+
+.company_layout .company_layout_txt2 {
+    display: inline-block;
+    margin-top: 18px;
+    font-size: 34px;
+    line-height: 44px;
+    color: #111;
+    letter-spacing: -0.05em;
+    font-weight: 500;
+}
+
+.company_layout .company_layout_txt3 {
+    margin-top: 37px;
+    font-size: 18px;
+    line-height: 32px;
+    color: #666;
+    font-weight: 350;
+    letter-spacing: -0.05em;
+    word-break: keep-all;
+}
+
+.company_contents_sec2 {
+    height: 500px;
+    background: url(../Img/company6.jpg) no-repeat center;
+    background-size: cover;
+}
+

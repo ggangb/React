@@ -1,0 +1,35 @@
+.admin_img img {
+    width: 100px;
+    height: 100px;
+    float: center;
+}
+
+
+.admin_order_table td {
+    padding: 13px 10px 15px 18px;
+    border-bottom: 1px solid #dbdbdb;
+    vertical-align: middle;
+}
+.admin_order_table th {
+    border-bottom: 1px solid #dbdbdb;
+    background-color: #e5e5e5;
+}
+
+.admin_order_table tr {
+    vertical-align: middle;
+    padding: 5px;
+}
+
+.admin_itemsave{
+    float: right;
+}
+
+.admin_order_table {
+    margin-top: 30px;
+    width: 100%;
+    border: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-top: 1px solid #999999;
+    text-align: center;
+  }

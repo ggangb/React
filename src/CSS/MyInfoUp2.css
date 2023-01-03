@@ -1,0 +1,137 @@
+.myinfoup2_wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.myinfoup2_title_wrap h2 {
+    font-size: 36px;
+    height: 65px;
+    align-items: center;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+.myinfoup2_title_wrap {
+    margin-bottom: 50px;
+}
+
+
+.myinfoup2_form_wrap {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.myinfoup2_name_wrap,
+.myinfoup2_phone_wrap,
+.myinfoup2_adr_wrap,
+.myinfoup2_email_wrap,
+.myinfoup2_pw_wrap {
+    margin-top: 20px;
+}
+
+.myinfoup2_input_wrap {
+    margin-top: 5px;
+}
+
+.myinfoup2_text {
+    font-size: 14px;
+    padding-left: 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: default;
+}
+
+.myinfoup2_help {
+    color: rgb(148, 147, 147);
+}
+
+.myinfoup2_input_wraps input {
+    width: 320px;
+    height: 36px;
+    padding: 0 10px;
+    font-size: 14px;
+    outline: none;
+    border: 2px solid lightgray;
+    letter-spacing: 1px;
+}
+
+.myinfoup2_input_wrap input:focus {
+    border: 2px solid #b5d692;
+}
+
+.myinfoup2_readonly {
+    cursor: default;
+}
+.myinfoup2_readonly:focus {
+    border: 2px solid lightgray !important;
+}
+
+.myinfoup2_post {
+    cursor: default;
+    width: 100px !important;
+    border-right: none !important;
+}
+
+.myinfoup2_post:focus {
+    border: 2px solid lightgray !important;
+    border-right: none !important;
+}
+
+.myinfoup2_searchaddress {
+    position: absolute;
+    width: 60px !important;
+    outline: none;
+    border: 2px solid #b5d692 !important;
+    background-color: white;
+    color: #b5d692;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.myinfoup2_search:hover {
+    background-color: #b5d692;
+    color: white;
+}
+
+/* ==================================== */
+.myinfoup2_btn_wrap {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+
+.myinfoup2_btn_cancle{
+    background-color: white;
+    font-weight: bold;
+    border: 2px solid #e5e5e5;
+    border-radius: 30px;
+    width: 100px;
+    height: 36px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.myinfoup2_btn_modify {
+    background-color: white;
+    font-weight: bold;
+    border: 2px solid #e5e5e5;
+    border-radius: 30px;
+    width: 100px;
+    height: 36px;
+    cursor: pointer;
+}
+.myinfoup2_btn_modify:hover {
+    background-color: #b5d692;
+}
+
+.myinfoup2_btn_cancle:hover {
+    background-color: darkorange;
+}
+.myinfoup2_btn_modify:active {
+    color: white;
+}
+
+.myinfoup2_btn_cancle:active {
+    color: white;
+}

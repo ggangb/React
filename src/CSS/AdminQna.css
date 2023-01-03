@@ -1,0 +1,66 @@
+.adminqna_list {
+    margin :auto;
+    width: 100%;
+}
+.adminqna_header{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 25px;
+}
+.adminqna_list table {
+    width: 100%;
+    margin: 0 0 20px 0;
+    border: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-top: 1px solid #3c3c3c;
+    text-align: center;
+}
+
+.adminqna_table{
+    width:100%;
+}
+
+.adminqna_list td {
+    padding: 13px 30px 13px 10px;
+    border-bottom: 1px solid #e5e5e5;
+    vertical-align: middle;
+}
+
+.adminqna_list th {
+    padding: 13px 30px 13px 10px;
+    border-bottom: 1px solid #dbdbdb;
+    background-color: #e5e5e5;
+}
+
+
+.adminqna_title_wrap h2 {
+    font-size: 36px;
+    height: 65px;
+    align-items: center;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+.adminqna_title_wrap {
+    margin-bottom: 15px;
+}
+
+.adminqna_list td input {
+    width: 21px;
+    height: 21px;
+    border-radius: 20%;
+    border: 2px solid #e5e5e5;
+    margin: 0;
+}
+
+.adminqna_list td input:active {
+    background-color: #e9f4ec;;
+    border: none;
+}
+
+.adminqna_list td input:checked {
+    background-color: #e9f4ec;
+    background-image: url('../Img/checkimg.svg');
+}

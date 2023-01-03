@@ -1,0 +1,42 @@
+.Private_container {
+    width: 100%;
+    padding-top: 25px;
+}
+
+.Private_contents {
+    min-height: 600px;
+    margin: 0 auto;
+    width: 1200px;
+    padding: 0 0 60px 0;
+}
+
+.Private_contents_main {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 45px 0 0 0;
+}
+
+.Private_content_box {
+    float: left;
+    width: 100%;
+    margin-bottom: 70px;
+
+}
+
+.Private_service_title {
+    margin: 0 0 20px 0;
+    padding: 0 0 10px 0;
+    font-size: 16px;
+    border-bottom: 1px solid #999999;
+}
+
+.Private_service_title h2 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.Private_service_cont {
+    font-family: 'Noto Sans KR','Nanum Gothic',"나눔고딕",Malgun Gothic,"맑은 고딕",AppleGothic,Dotum,"돋움",sans-serif;
+    color: black;
+}

@@ -1,0 +1,68 @@
+.admin_container {
+    margin: 0 auto;
+    position: relative;
+    width: 1600px;
+}
+
+.admin_title {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.admin_table {
+    margin-top: 30px;
+    font-size: 14px;
+    border-collapse: collapse;
+}
+
+.admin_table thead {
+    font-size: 18px;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+}
+
+.admin_review_contents {
+    width: 600px;
+}
+
+.admin_refund_ordernum {
+    width: 200px;
+}
+
+.admin_refund_itemname {
+    width: 400px;
+}
+
+.admin_refund_reason {
+    width: 300px;
+}
+
+.admin_refund_status {
+    width: 200px;
+}
+
+.admin_review_date {
+    width: 200px;
+}
+
+.admin_review_idx {
+    width: 100px;
+}
+
+.admin_review_ordernum {
+    width: 200px;
+}
+
+.admin_review_blind {
+    width: 60px;
+}
+
+.admin_btn button {
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.admin_btn button:hover {
+    background-color: lightgreen;
+}

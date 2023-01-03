@@ -1,0 +1,154 @@
+
+.myreview_wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.myreview_title_wrap h2 {
+    font-size: 36px;
+    height: 65px;
+    align-items: center;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+.myreview_title_wrap {
+    margin-bottom: 50px;
+}
+
+.myreview_banner {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+
+.myreview_notice {
+    margin-bottom: 50px;
+}
+
+.myreview_notice p {
+    font-size: 14px;
+    color: darkorange;
+    font-weight: bold;
+}
+
+.myreview_menu_wrap {
+    margin-top: 10px;
+}
+
+.myreview_btn_box {
+    margin-right: 15px;
+}
+
+.myreview_menu_wrap button {
+    background-color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.myreview_able_btn_active, .myreview_did_btn_active {
+    font-weight: bold;
+    font-size: 20px !important;
+    border-bottom: 2px solid #b5d692 !important;
+}
+
+.myreview_list_wrap {
+    margin-top: 10px;
+}
+
+.myreview_img_wrap {
+    width: 120px;
+    padding: 10px;
+}
+
+.myreview_img {
+    width: 100%;
+}
+
+.myreview_nondata {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.myreview_able_wrap ul {
+    padding-inline-start: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.myreview_able_wrap ul li{
+    border-top: 1px solid #b5d692;
+    border: 2px solid #e5e5e5;
+    display: flex;
+    border-radius: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+.myreview_item_name {
+    width: 300px;
+}
+
+.myreview_item_name:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.myreview_write_btn {
+    background-color: white;
+    font-weight: bold;
+    border: 2px solid #e5e5e5;
+    border-radius: 30px;
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.myreview_write_btn:active {
+    color: white;
+}
+.myreview_write_btn:hover {
+    background-color: #b5d692;
+}
+
+.myreview_did_contents {
+    width: 490px;
+    text-align: center;
+}
+
+.myreview_update_btn {
+    background-color: white;
+    font-weight: bold;
+    border: 2px solid #e5e5e5;
+    border-radius: 30px;
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.myreview_blind_btn {
+    background-color: white;
+    font-weight: bold;
+    border: 2px solid #e5e5e5;
+    border-radius: 30px;
+    width: 60px;
+    height: 30px;
+}
+
+.myreview_update_btn:active {
+    background-color: #b5d692;
+    color: white;
+}
+
+.myreview_update_btn:hover {
+    background-color: #b5d692;
+    color: white;
+}
+

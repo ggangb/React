@@ -1,0 +1,34 @@
+.adminqna-modal-table{
+    width: 100%;
+}
+
+.adminqna-modal {
+    width: 100%;
+}
+.adminqna-modal td {
+    padding: 13px 10px 15px 18px;
+    width: 100%;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.adminqna-modal-cont {
+    width: 100%;
+}
+.adminqna-comment {
+    width: 100%;
+    border-top: 2px solid #dbdbdb;
+    padding-top: 15px;
+}
+
+.adminqna-modal td {
+    padding: 13px 10px 15px 18px;
+    width: 100%;
+    background-color:#f8f8f8;
+}
+
+
+.adminqna-content, .admin-comment {
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+}

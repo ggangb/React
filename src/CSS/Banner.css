@@ -1,0 +1,60 @@
+.main_ad_wrap {
+  width: 100%;
+  height: 300px;
+}
+
+/* .main_swiper {
+  position: relative;
+  width: 1200px;
+  height: 100%;
+} */
+
+.main_swiper_banner {
+  width: 100%;
+  height: 100%;
+}
+
+.main_swiper img {
+  display: block;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.main_banner_content {
+  margin: 15px auto;
+  width: 1200px;
+}
+
+.main_banner_img {
+  width: 500px;
+  height: 500px;
+}
+.main_banner_img3,
+.main_banner_img4 {
+  vertical-align: top;
+  width: 310px;
+  height: 134px;
+  margin-left: 40px;
+  border-radius: 10px;
+}
+.main_banner_img5 {
+  width: 400px;
+  height: 200px;
+}
+.main_banner_img2 {
+  width: 1200px;
+  float: left;
+  margin-bottom: 15px;
+}
+
+.main_info_banner {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.main_banner_video {
+  width: 650px;
+  margin-top: 20px;
+  margin-left: 40px;
+}

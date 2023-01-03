@@ -1,0 +1,123 @@
+.refundapp_title_wrap h2 {
+    font-size: 36px;
+    height: 65px;
+    align-items: center;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+.refundapp_title_wrap {
+    margin-bottom: 50px;
+}
+
+.refundapp_form_wrap {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.refundapp_text {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: default;
+    margin-top: 20px;
+}
+
+.refundapp_input_ordernum, .refundapp_select_wrap, .refundapp_input_itemname, .refundapp_input_price {
+    margin-top: 5px;
+}
+
+.refundapp_input_ordernum input {
+    width: 320px;
+    height: 36px;
+    padding: 0 10px;
+    font-size: 14px;
+    outline: none;
+    border: 2px solid lightgray;
+    letter-spacing: 1px;
+    cursor: default;
+}
+
+.refundapp_input_itemname textarea {
+    width: 320px;
+    height: 90px;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+    border: 2px solid lightgray;
+    letter-spacing: 1px;
+    cursor: default;
+    overflow: hidden;
+    resize: none;
+}
+.refundapp_input_price textarea {
+    width: 320px;
+    height: 90px;
+    padding: 10px;
+    font-size: 36px;
+    color: darkorange;
+    outline: none;
+    border: 2px solid lightgray;
+    letter-spacing: 1px;
+    cursor: default;
+    overflow: hidden;
+    resize: none;
+}
+
+.refundapp_select_wrap select {
+    border: 2px solid lightgray;
+    width: 320px;
+    height: 36px;
+    padding: 0 10px;
+    font-size: 14px;
+    outline: none;
+}
+
+/* ==================================== */
+.refundapp_btn_box {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.refundapp_btn_box button {
+    margin-left: 30px;
+    font-size: 14px;
+}
+
+.refundapp_btn_cancel {
+    background-color: white;
+    font-weight: bold;
+    border: 2px solid #e5e5e5;
+    border-radius: 30px;
+    width: 100px;
+    height: 36px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.refundapp_btn_refund {
+    background-color: white;
+    font-weight: bold;
+    border: 2px solid #e5e5e5;
+    border-radius: 30px;
+    width: 100px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.refundapp_btn_refund:active{
+    color: white;
+}
+
+.refundapp_btn_refund:hover{
+    background-color: #b5d692;
+}
+
+.refundapp_btn_cancel:active{
+    color: white;
+}
+
+.refundapp_btn_cancel:hover{
+    background-color: darkorange;
+}

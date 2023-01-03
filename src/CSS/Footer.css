@@ -1,0 +1,88 @@
+#footer {
+  width: 100%;
+  position: relative;
+  background-color: #e9f4ec;
+  clear: both;
+  font-weight: 300;
+}
+
+.footer_wrap {
+  position: relative;
+  width: 1200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.footer_top {
+  border-bottom: 2px solid white;
+  padding-top: 10px;
+}
+
+.footer_top ul {
+  margin: 0;
+  margin-bottom: 10px;
+  list-style: none;
+  padding-inline-start: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.footer_top ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.footer_top ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer_bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.footer_bottom ul li {
+  margin: 2px;
+}
+
+.footer_cs {
+  font-size: 12px;
+}
+
+.footer_cs ul {
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+.footer_cs_phone {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.footer_company_info {
+  font-size: 12px;
+}
+
+.footer_company_info ul {
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+/* .footer_company_info ul li {
+  padding: 5px;
+} */
+
+.footer_authority {
+  font-size: 12px;
+}
+
+.footer_authority ul {
+  list-style: none;
+  padding-inline-start: 0;
+}

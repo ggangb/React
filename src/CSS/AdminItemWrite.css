@@ -1,0 +1,20 @@
+.admin_item_table th{
+    padding: 13px 30px 13px 10px;
+    border-bottom: 1px solid #dbdbdb;
+    background-color: #e5e5e5e5;
+    width: 120px;
+}
+
+.item_board_box {
+    width: 650px;
+}
+
+.write_item_title {
+    margin-bottom: 50px;
+}
+
+.admin_item_table input {
+    width: 300px !important;
+    height: 30px !important;
+    border-radius: 0 !important; 
+}

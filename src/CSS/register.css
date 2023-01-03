@@ -1,0 +1,179 @@
+.sign_container {
+  width: 600px;
+  height: auto;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: large;
+  margin: auto;
+  margin: 100px auto;
+  box-shadow: 0px 0px 8px rgb(0 0 0 / 35%);
+}
+
+.sign_container h2 {
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 30px;
+}
+
+.sign_wrap {
+  margin: auto;
+  width: 450px;
+}
+
+.second_regbtn {
+  width: 300px;
+  background-color: #b5d692;
+  position: relative;
+  font-weight: bold;
+  margin: 30px auto;
+  display: block;
+  border-radius: 10px;
+  height: 38px;
+  border: 0;
+  color: white;
+  font-size: 16px;
+  letter-spacing: 2px;
+  box-shadow: 0px -2px 12px inset rgb(0 100 0 / 25%);
+}
+.second_regbtn:hover {
+  background-color: #a0d06d;
+}
+.second_regbtn:focus {
+  background-color: #b5d692 !important;
+}
+.secondKktRegbtn {
+  margin: auto;
+  margin-top: 25px;
+  position: relative;
+  background-color: rgb(255, 210, 71);
+  border-radius: 10px;
+  width: 300px;
+  height: 38px;
+  font-weight: bold;
+  display: block;
+  box-shadow: 0px -2px 26px inset #ffc107;
+}
+
+.secondKktRegbtn:hover {
+  background-color: rgb(255, 210, 71, 60%);
+}
+.secondFacebookRegbtn {
+  position: relative;
+  border-radius: 10px;
+  width: 300px;
+  height: 38px;
+  background-color: rgb(0, 152, 255);
+  font-weight: bold;
+  color: white;
+  margin: auto;
+  margin-top: 19px;
+  display: block;
+  box-shadow: 0px -2px 26px inset rgb(0 0 100 / 25%);
+}
+.secondFacebookRegbtn:hover {
+  background-color: rgb(0, 152, 255, 60%);
+  color: white;
+}
+.secondNaverRegbtn {
+  position: relative;
+  border-radius: 10px;
+  width: 300px;
+  height: 38px;
+  background-color: rgb(60, 179, 27);
+  font-weight: bold;
+  color: white;
+  margin: auto;
+  margin-top: 19px;
+  display: block;
+  box-shadow: 0px -1px 12px inset rgb(0 100 0 / 30%);
+}
+.secondNaverRegbtn:hover {
+  background-color: rgb(60, 179, 27, 60%);
+  color: white;
+}
+.second_register_btn_wrapper {
+  width: 100%;
+  height: 300px;
+}
+
+.choice_option {
+  position: relative;
+  color: grey;
+  font-size: 12px;
+  text-align: center;
+  display: block;
+}
+
+/* 동의 박스 */
+
+.agreement_wrapper {
+  height: 360px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.agree_box form-check input {
+  margin-right: 10px;
+}
+
+.agreement_wrapper input {
+  margin-right: 15px;
+}
+
+.agree_box {
+  display: flex;
+  align-items: center;
+}
+
+/* api 관련 폼 */
+
+.checkOverlapEmail {
+  background-color: #b5d692;
+  font-weight: bold;
+}
+.checkOverlapEmail:hover {
+  background-color: #b5d692;
+}
+.checkOverlapEmail:focus {
+  background-color: #b5d692 !important;
+}
+.sendCode {
+  font-weight: bold;
+  background-color: #b5d692;
+}
+.sendCode:hover {
+  background-color: #b5d692;
+}
+.sendCode:focus {
+  background-color: #b5d692 !important;
+}
+.confirmCode {
+  font-weight: bold;
+  background-color: #b5d692;
+}
+.confirmCode:hover {
+  background-color: #b5d692;
+}
+.confirmCode:focus {
+  background-color: #b5d692 !important;
+}
+
+.searchPostCode {
+  width: 60px;
+  height: 33px;
+  background-color: #b5d692;
+  position: relative;
+  font-weight: bold;
+}
+.searchPostCode:hover {
+  background-color: #b5d692;
+}
+.searchPostCode:focus {
+  background-color: #b5d692 !important;
+}
+.postCodeInput {
+  display: inline;
+  width: 90px;
+  height: 33px;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,21 @@
+.scroll_container{
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  z-index: 1;
+}
+.scroll_container button {
+  font-weight: bold;
+  font-size: 16px;
+  width: 80px;
+  height: 80px;
+  background-color: #b5d692;
+  color:#fff;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+.scroll_container button:hover{
+  color : #ae0000;
+}

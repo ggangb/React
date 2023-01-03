@@ -1,0 +1,143 @@
+#paging {
+  width: 100%;
+    display: inline-block;
+}
+
+.itemlist_container {
+  min-height: 400px;
+  padding: 0 0 60px 0;
+}
+
+.itemlist_contents {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.itemlist_main {
+  width: 100%;
+  min-height: 500px;
+  padding: 0;
+  padding: 10px 0 0 0;
+}
+
+.itemlist_title h2 {
+  float: left;
+  font-size: 36px;
+  height: 65px;
+  align-items: center;
+  font-weight: bold;
+}
+
+.itemlist_inbox {
+  height: 40px;
+  margin-top: 5px;
+}
+
+.itemlist_box {
+  height: 60px;
+  margin: 0 0 20px 0;
+  padding: 9px 0 10px 0;
+  border-top: 1px solid #999999;
+  border-bottom: 1px solid #dbdbdb;
+  clear: both;
+}
+
+.itemlist_num strong {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.itemlist_view_num {
+  float: right;
+  padding-right: 10px;
+  padding-left: 15px;
+}
+
+.itemlist_view_num select {
+  width: 120px;
+  height: 31px;
+  color: #717171;
+  vertical-align: top;
+  outline: none;
+}
+
+.itemlist_items_cont {
+  position: relative;
+  width: 100%;
+}
+
+.itemlist_items_cont ul {
+  float: left;
+  width: 100%;
+  list-style: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+.itemlist_items_box {
+  display: block;
+  margin: 0 10px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.itemlist_items_img {
+  border: 0;
+  width: 100%;
+  border-radius: 5px;
+  display: inline-block !important;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  border: 1px solid #ebebeb;
+  vertical-align: middle;
+}
+
+.itemlist_items_img:hover {
+  cursor: pointer;
+}
+.itemlist_items_cont li {
+  float: left;
+  width: 240px;
+  height: 335px;
+
+  padding: 15px 0;
+  margin-bottom: 20px;
+}
+
+.itemlist_items_cont li:hover {
+  border-radius: 3px;
+  box-shadow: 1px 1px 10px rgb(0, 0, 0, 25%);
+}
+
+.itemlist_items_img img {
+  width: 220px;
+  height: 220px;
+}
+
+.itemlist_info_title {
+  height: 45px;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+.itemlist_info_title strong {
+  font-weight: 400;
+  padding: 0;
+  position: relative;
+  font-size: 15px;
+  letter-spacing: -0.5px;
+  min-height: 0px;
+  color: black;
+}
+
+.itemlist_info_money strong {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ae0000;
+  margin-left: 10px;
+  letter-spacing: -1px;
+  padding: 0 0 5px 0;
+}

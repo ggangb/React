@@ -1,0 +1,38 @@
+.qna-modal {
+  width: 100%;
+}
+.qna-modal td {
+  padding: 13px 10px 15px 18px;
+  width: 100%;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.qna-modal-cont {
+  width: 80%;
+  margin-left: 100px;
+}
+
+.qna-comment {
+  width: 80%;
+  margin-left: 100px;
+  border-top: 2px solid #dbdbdb;
+  padding-top: 15px;
+}
+
+.qna-modal td {
+  padding: 13px 10px 15px 18px;
+  background-color: #f8f8f8;
+}
+
+.qna-modal-table {
+  width: 100%;
+}
+
+.qna-modal .qna-content,
+.admin-comment {
+  margin: 20px 0;
+  margin-top: 10px;
+  min-height: 15px;
+  height: auto;
+  margin-bottom: 15px;
+}

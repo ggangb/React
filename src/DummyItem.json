@@ -1,0 +1,114 @@
+{
+  "rcmitem": [
+    {
+      "id": 1,
+      "title": "내 눈을 책임지는 건강아이템",
+      "img": "/images/s1.jpg",
+      "price": "18,900원"
+    },
+    {
+      "id": 2,
+      "title": "나의 혈행개선을 위한 등푸른생선 오메가3",
+      "img": "/images/s2.jpg",
+      "price": "19,900원"
+    },
+    {
+      "id": 3,
+      "title": "제품명3",
+      "img": "/images/s3.jpg",
+      "price": "15,900원"
+    },
+    {
+      "id": 4,
+      "title": "제품4",
+      "img": "/images/s4.jpg",
+      "price": "12,900원"
+    },
+    {
+      "id": 5,
+      "title": "제품5",
+      "img": "/images/s5.jpg",
+      "price": "21,900원"
+    },
+    {
+      "id": 6,
+      "title": "제품6",
+      "img": "/images/s6.jpg",
+      "price": "12,900원"
+    },
+    {
+      "id": 7,
+      "title": "제품7",
+      "img": "/images/s7.jpg",
+      "price": "21,900원"
+    },
+    {
+      "id": 8,
+      "title": "나의 혈행개선을 위한 등푸른생선 오메가3",
+      "img": "/images/s2.jpg",
+      "price": "19,900원"
+    },
+    {
+      "id": 9,
+      "title": "제품명3",
+      "img": "/images/s3.jpg",
+      "price": "15,900원"
+    },
+    {
+      "id": 10,
+      "title": "제품4",
+      "img": "/images/s4.jpg",
+      "price": "12,900원"
+    },
+    {
+      "id": 11,
+      "title": "제품5",
+      "img": "/images/s5.jpg",
+      "price": "21,900원"
+    },
+    {
+      "id": 12,
+      "title": "제품6",
+      "img": "/images/s6.jpg",
+      "price": "12,900원"
+    },
+    {
+      "id": 13,
+      "title": "제품7",
+      "img": "/images/s7.jpg",
+      "price": "21,900원"
+    }
+  ],
+  "rcm": [
+    {
+      "id": 1,
+      "title": "추천한다",
+      "img": "/images/s1.jpg",
+      "price": "18,900원"
+    },
+    {
+      "id": 2,
+      "title": "추천약2",
+      "img": "/images/s2.jpg",
+      "price": "19,900원"
+    },
+    {
+      "id": 3,
+      "title": "추천3",
+      "img": "/images/s3.jpg",
+      "price": "15,900원"
+    },
+    {
+      "id": 4,
+      "title": "대충추천",
+      "img": "/images/s4.jpg",
+      "price": "12,900원"
+    },
+    {
+      "id": 5,
+      "title": "그까이꺼 추천",
+      "img": "/images/s6.jpg",
+      "price": "21,900원"
+    }
+  ]
+}

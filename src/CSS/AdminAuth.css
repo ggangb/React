@@ -1,0 +1,76 @@
+.admin_wrap {
+  margin-top:3%;
+  margin-left: 25%;
+  width: 930px;
+  height: 380px;
+  position: absolute;
+}
+
+.admin_title_wrap h2 {
+  font-size: 36px;
+  height: 65px;
+  align-items: center;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+}
+
+.admin_title_wrap {
+  margin-bottom: 50px;
+}
+
+.admin_pwcheck_wrap {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 500px;
+  position: relative;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.admin_pwcheck_text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.admin_input_wrap {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.admin_input_wrap input[type="password"] {
+  width: 320px;
+  height: 36px;
+  outline: none;
+  border: 2px solid lightgray;
+  padding: 0 10px;
+  letter-spacing: 1px;
+  font-size: 14px;
+  color: black;
+}
+
+.admin_input_wrap input[type="password"]:focus {
+  border: 2px solid #b5d692;
+}
+
+.admin_input_wrap input[type="button"] {
+  background-color: white;
+  border: 2px solid #e5e5e5;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  width: 100px;
+  height: 36px;
+  color: lightgray;
+  cursor: pointer;
+}
+
+.admin_input_wrap input[type="button"]:active {
+  background-color: #b5d692;
+  color: white;
+}
+.admin_input_wrap input[type="button"]:hover {
+  background-color: #b5d692;
+  color: white;
+}

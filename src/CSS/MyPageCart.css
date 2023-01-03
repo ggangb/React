@@ -1,0 +1,98 @@
+.cartul {
+    padding-inline-start: 0;
+}
+
+.cartitemlist {
+    position: relative;
+    display: table;
+    padding-top: 20px;
+    table-layout: fixed;
+    margin-top: 20px;
+    border-top: 1px solid lightgray;
+}
+
+.cartitem {
+    position: relative;
+}
+
+.cartiteminfodate {
+    font-size: 12px;
+
+}
+
+.cartiteminfoname {
+    font-size: 16px;
+}
+
+.cartiteminfoname:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.cartiteminfoprice {
+    font-size: 14px;
+}
+
+.cartcheckboxarea {
+    width: 70px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.cartthumbnail{
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin-right: 30px;
+    top: 50%;
+    display: table-cell;
+}
+
+.cartthumbnailimg {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.cartiteminfo{
+    width: 700px;
+    padding-left: 20px;
+    display: table-cell;
+    vertical-align: middle;
+}
+/* ----------------------------------------- */
+.btnarea{
+    height: 70px;
+    position: fixed;
+    background-color: rgb(68, 218, 131);
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.btnareainner {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: right;
+
+}
+
+.btnareainner button {
+    border: none;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    border-radius: 15px;
+    color: rgb(68, 218, 131);
+    font-weight: bold;
+}
+
+.btnareainner button:hover{
+    cursor: pointer;
+}
+
+.deletebtn {
+    margin-right: 20px;
+}

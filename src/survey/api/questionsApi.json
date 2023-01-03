@@ -1,0 +1,129 @@
+[
+	{
+		"research_num": "질문1",
+		"research_organ": "간",
+		"research_quest": "나는 휴식을 취해도 피로가 해소되지 않고, 의욕이 없는 편이다."
+	},
+	{
+		"research_num": "질문2",
+		"research_organ": "간",
+		"research_quest": "피부에 혈기가 없고 누렇게 보인다."
+	},
+	{
+		"research_num": "질문3",
+		"research_organ": "간",
+		"research_quest": "최근 짜증이 늘고 신경질적이다."
+	},
+	{
+		"research_num": "질문4",
+		"research_organ": "간",
+		"research_quest": "배에 가스가 많이 차고 거북하다."
+	},
+	{
+		"research_num": "질문5",
+		"research_organ": "간",
+		"research_quest": "1주일에 3회 이상 음주를 한다."
+	},
+	{
+		"research_num": "질문1",
+		"research_organ": "눈",
+		"research_quest": "눈이 피로하고 침침해지는 것이 걱정된다."
+	},
+	{
+		"research_num": "질문2",
+		"research_organ": "눈",
+		"research_quest": "사물을 볼 때 나도 모르게 인상을 찌푸린다."
+	},
+	{
+		"research_num": "질문3",
+		"research_organ": "눈",
+		"research_quest": "하루 4시간 이상 모니터 화면을 본다. (PC, 스마트폰, 태블릿 등)"
+	},
+	{
+		"research_num": "질문4",
+		"research_organ": "눈",
+		"research_quest": "취침 전, 기상 후 스마트폰을 본다."
+	},
+	{
+		"research_num": "질문5",
+		"research_organ": "눈",
+		"research_quest": "나는 흡연을 한다."
+	},
+	{
+		"research_num": "질문1",
+		"research_organ": "혈관",
+		"research_quest": "평소에 채소를 많이 섭취하지 않는 편이다. (육류 위주의 식단)"
+	},
+	{
+		"research_num": "질문2",
+		"research_organ": "혈관",
+		"research_quest": "손발이 쉽게 차가워지며, 팔다리가 자주 붓는다."
+	},
+	{
+		"research_num": "질문3",
+		"research_organ": "혈관",
+		"research_quest": "집중이 잘 안 되고 자주 어지럽다."
+	},
+	{
+		"research_num": "질문4",
+		"research_organ": "혈관",
+		"research_quest": "피가 잘 안 통하는 느낌이 든다."
+	},
+	{
+		"research_num": "질문5",
+		"research_organ": "혈관",
+		"research_quest": "잠을 자도 피곤한 느낌이다."
+	},
+	{
+		"research_num": "질문1",
+		"research_organ": "장",
+		"research_quest": "배변 후 항상 잔변감이 있다."
+	},
+	{
+		"research_num": "질문2",
+		"research_organ": "장",
+		"research_quest": "늘 방귀 냄새가 심한 편이다."
+	},
+	{
+		"research_num": "질문3",
+		"research_organ": "장",
+		"research_quest": "복부 팽만감이 지속된다."
+	},
+	{
+		"research_num": "질문4",
+		"research_organ": "장",
+		"research_quest": "불안감, 긴장감, 스트레스가 있으면 장 트러블이 생긴다."
+	},
+	{
+		"research_num": "질문5",
+		"research_organ": "장",
+		"research_quest": "1주일에 3일 이상 대변을 보는 경우가 적다."
+	},
+	{
+		"research_num": "질문1",
+		"research_organ": "비타민",
+		"research_quest": "일상에 활력이 부족한 편이다."
+	},
+	{
+		"research_num": "질문2",
+		"research_organ": "비타민",
+		"research_quest": "평소 채소, 과일을 잘 안 먹는다."
+	},
+	{
+		"research_num": "질문3",
+		"research_organ": "비타민",
+		"research_quest": "하루 20분이상 야외활동을 잘 하지 않는다."
+	},
+	{
+		"research_num": "질문4",
+		"research_organ": "비타민",
+		"research_quest": "머리카락에 힘이 없고 건조한 편이다."
+	},
+	{
+		"research_num": "질문5",
+		"research_organ": "비타민",
+		"research_quest": "나는 썬크림을 자주 바르고 다닌다."
+	}
+
+
+]

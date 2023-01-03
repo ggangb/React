@@ -1,0 +1,123 @@
+.myrefund_wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.myrefund_title_wrap h2 {
+  font-size: 36px;
+  height: 65px;
+  align-items: center;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+}
+
+.myrefund_title_wrap {
+  margin-bottom: 50px;
+}
+
+.myrefund_list_wrap {
+  min-height: 400px;
+}
+
+.myrefund_list_wrap tr {
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.myrefund_list_wrap table {
+  margin-top: 10px;
+  border-collapse: collapse;
+  border-style: hidden;
+  box-shadow: 0 0 0 2px #e5e5e5;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.myrefund_list_wrap thead {
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  height: 30px;
+}
+
+.myrefund_list_wrap thead td {
+  padding-top: 7px;
+}
+
+.myrefund_list_wrap tbody td {
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 14px;
+  height: 130px;
+  padding: 3px 0;
+  font-weight: 300;
+}
+
+.myrefund_list_wrap tbody td:nth-child(n + 4) {
+  font-weight: 600;
+}
+
+.myrefund_item_info_wrap {
+  height: 120px;
+  text-align: left;
+  position: relative;
+  display: table;
+}
+
+.myrefund_item_img {
+  display: table-cell;
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+}
+
+.myrefund_item_name {
+  width: 100%;
+  vertical-align: middle;
+  padding-left: 10px;
+  font-size: 15px;
+  padding-right: 10px;
+  font-weight: 600;
+}
+
+.myrefund_item_info_td {
+  width: 400px;
+}
+
+.myrefund_item_info_td:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.myrefund_item_price_td {
+  width: 100px;
+}
+
+.myrefund_status_btn_td {
+  width: 110px;
+}
+
+.myrefund_status_btn_td button {
+  width: 100px;
+  height: 30px;
+  border-radius: 30px;
+  border: 2px solid #e5e5e5;
+  background-color: white;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.myrefund_status_btn_td button:hover {
+  cursor: pointer;
+  background-color: #b5d692;
+}
+.myrefund_status_btn_td button:active {
+  background-color: #b5d692;
+  color: white;
+}
+
+.myrefund_refund_reason_td {
+  width: 120px;
+}

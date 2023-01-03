@@ -1,0 +1,137 @@
+#qnaWrite_container {
+  width: 650px;
+  height: 600px;
+  padding: 10px;
+}
+
+#qnaWrite_contents {
+  min-height: 400px;
+  height: 100%;
+  padding: 0 0 60px 0;
+}
+
+.qnaWrite_board_sec {
+  width: 100%;
+  height: 600px;
+  display: inline-block;
+}
+
+.qnaWrite_main_contents {
+  padding: 20px 0 0 0;
+  position: relative;
+  width: 650;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.qnaWrite_main_cont {
+  float: left;
+  position: relative;
+  width: 955px;
+  height: 100%;
+  padding: 0 0 0 40px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.qnaWrite_side_box {
+  min-height: 250px;
+  padding: 0 0 50px 0;
+}
+
+.qnaWrite_board_title {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  width: 100%;
+  height: 20px;
+}
+
+.qnaWrite_board_write {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.qnaWrite_board_box table {
+  width: 100%;
+  margin: 0 0 20px 0;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-top: 1px solid #999999;
+}
+.qnaWrite_board_box tr:nth-child(4) {
+  height: 300px;
+}
+.qnaWrite_board_box th {
+  font-weight: bold;
+  border-bottom: 1px solid #dbdbdb;
+  background: #fbfbfb;
+  text-align: center;
+  vertical-align: top;
+  width: 20%;
+  height: 50px;
+  vertical-align: middle;
+}
+
+.qna_title {
+  color: black;
+  width: 500px;
+  border: none;
+}
+
+.qnaWrite_board_box td {
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 10px;
+  width: 100%;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.qnaWrite_board_box textarea {
+  width: 530px;
+  height: 280px;
+}
+
+.qnaWrite_btn_del {
+  width: 100px;
+  height: 50px;
+  background-color: white;
+  font-weight: bold;
+  border: 2px solid #e5e5e5;
+  border-radius: 30px;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.qnaWrite_btn {
+  width: 100px;
+  height: 50px;
+  background-color: white;
+  font-weight: bold;
+  border: 2px solid #e5e5e5;
+  border-radius: 30px;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+}
+.qnaWrite_btn:hover {
+  background-color: #b5d692;
+  color: white;
+}
+
+.qnaWrite_btn_del:hover {
+  background-color: red;
+  color: white;
+}
+.qnaWrite_btn:active {
+  background-color: #b5d692;
+  color: white;
+}
+
+.qnaWrite_btn_del:active {
+  background-color: red;
+  color: white;
+}

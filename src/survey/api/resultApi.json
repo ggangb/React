@@ -1,0 +1,199 @@
+[
+	{
+		"research_organ": "간",
+		"id": "건강한 간 밀크 씨슬",
+		"url": "/item/1001002",
+		"src": "/result/liver1.png",
+		"score": 1,
+		"price": "33,000"
+	},
+	{
+		"research_organ": "간",
+		"id": "간 건강 슈퍼케어",
+		"url": "/item/1001003",
+		"src": "/result/liver2.png",
+		"score": 2,
+		"price": "38,000"
+	},
+	{
+		"research_organ": "간",
+		"id": "",
+		"url": "/item/1001004",
+		"src": "/result/liver3.png",
+		"score": 3,
+		"price": "77,000"
+	},
+	{
+		"research_organ": "간",
+		"id": "",
+		"url": "/item/1001005",
+		"src": "/result/liver4.png",
+		"score": 4,
+		"price": "27,000"
+	},
+	{
+		"research_organ": "간",
+		"id": "헬씨칸",
+		"url": "/item/1001001",
+		"src": "/result/liver5.png",
+		"score": 5,
+		"price": "12,345"
+	},
+	{
+		"research_organ": "눈",
+		"id": "아이케어 루테인",
+		"url": "/item/1002001",
+		"src": "/result/eye1.png",
+		"score": 1,
+		"price": "45,000"
+	},	
+	{
+		"research_organ": "눈",
+		"id": "루테인아스타잔틴",
+		"url": "/item/1002002",
+		"src": "/result/eye2.png",
+		"score": 2,
+		"price": "32,000"
+	},
+	{
+		"research_organ": "눈",
+		"id": "루테인 아이플러스",
+		"url": "/item/1002003",
+		"src": "/result/eye3.png",
+		"score": 3,
+		"price": "36,000"
+	},
+	{
+		"research_organ": "눈",
+		"id": "루테인지아잔틴",
+		"url": "/item/1002004",
+		"src": "/result/eye4.png",
+		"score": 4,
+		"price": "21,900"
+	},
+	{
+		"research_organ": "눈",
+		"id": "아이플로라",
+		"url": "/item/1002005",
+		"src": "/result/eye5.png",
+		"score": 5,
+		"price": "87,000"
+	},
+	{
+		"research_organ": "비타민",
+		"id": "고려은단 비타민C 1000",
+		"url": "/item/1002011",
+		"src": "/result/vitamin1.png",
+		"score": 1,
+		"price": "32,000"
+	},
+	{
+		"research_organ": "비타민",
+		"id": "메가 비타민C 3000",
+		"url": "/item/1002012",
+		"src": "/result/vitamin2.png",
+		"score": 2,
+		"price": "42,000"
+	},
+	{
+		"research_organ": "비타민",
+		"id": "써니 비타민D",
+		"url": "/item/1002013",
+		"src": "/result/vitamin3.png",
+		"score": 3,
+		"price": "55,000"
+	},
+	{
+		"research_organ": "비타민",
+		"id": "종근당 비타민D",
+		"url": "/item/1002014",
+		"src": "/result/vitamin4.png",
+		"score": 4,
+		"price": "17,000"
+	},
+	{
+		"research_organ": "비타민",
+		"id": "퓨어웨어 비타민C",
+		"url": "/item/1002015",
+		"src": "/result/vitamin5.png",
+		"score": 5,
+		"price": "38,000"
+	},	
+	{
+		"research_organ" : "장",
+		"id": "포스트 바이오틱스",
+		"url": "/item/1002006",
+		"src": "/result/diges1.png",
+		"score": 1,
+		"price": "73,000"
+	},
+	{
+		"research_organ" : "장",
+		"id": "덴마크 유산균 이야기",
+		"url": "/item/1002007",
+		"src": "/result/diges2.png",
+		"score": 2,
+		"price": "34,500"
+	},
+	{
+		"research_organ" : "장",
+		"id": "락토핏 유산균 골드",
+		"url": "/item/1002008",
+		"src": "/result/diges3.png",
+		"score": 3,
+		"price": "67790"
+	},{
+		"research_organ" : "장",
+		"id": "종근당 차전자피",
+		"url": "/item/1002010",
+		"src": "/result/diges4.png",
+		"score": 4,
+		"price": "13,000"
+	},{
+		"research_organ" : "장",
+		"id": "슈퍼 프로바이오틱스",
+		"url": "/item/1002009",
+		"src": "/result/diges5.png",
+		"score": 5,
+		"price": "42,000"
+	},
+	{
+		"research_organ" : "혈관",
+		"id": "프리미엄 오메가3 골드",
+		"url": "/item/1002010",
+		"src": "/result/blood1.png",
+		"score": 1,
+		"price": "43,200"
+	},
+	{
+		"research_organ" : "혈관",
+		"id": "DHA 오메가3",
+		"url": "/item/1002009",
+		"src": "/result/blood2.png",
+		"score": 2,
+		"price": "26,500"
+	},
+	{
+		"research_organ" : "혈관",
+		"id": "징코 플러스+",
+		"url": "/item/1002008",
+		"src": "/result/blood3.png",
+		"score": 3,
+		"price": "41,500"
+	},{
+		"research_organ" : "혈관",
+		"id": "메이플트리 감마리놀",
+		"url": "/item/1002007",
+		"src": "/result/blood4.png",
+		"score": 4,
+		"price": "30,850"
+	},{
+		"research_organ" : "혈관",
+		"id": "메가 울트라 오메가3",
+		"url": "/item/1002006",
+		"src": "/result/blood5.png",
+		"score": 5,
+		"price": "40,500"
+	}
+]
+	

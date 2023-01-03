@@ -1,0 +1,482 @@
+.order_container {
+  min-height: 400px;
+  padding: 0 0 60px 0;
+}
+
+.order_contents {
+  padding: 10px 0 0 0;
+}
+
+.order_form {
+  margin-bottom: 70px;
+}
+.order_wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+.order_content_box {
+  float: left;
+  width: 100%;
+}
+
+.order_title {
+  overflow: hidden;
+  border-bottom: 1px solid #999999;
+}
+
+.order_title h2 {
+  float: left;
+  font-size: 36px;
+  height: 65px;
+  align-items: center;
+  font-weight: bold;
+}
+
+.order_amount strong,
+.order_item_price,
+.order_item_totalprice {
+  color: #333333;
+  font-size: 14px;
+}
+
+.order_item_price {
+  color: #333333;
+  font-size: 14px;
+}
+.order_cont_list {
+  margin: 50px 0 10px 0;
+}
+
+.order_cont_title {
+  padding: 0 0 10px 0;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.order_table table {
+  width: 100%;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.order_table th {
+  padding: 9px 10px 10px 10px;
+  border-top: 1px solid #999999;
+  border-bottom: 1px solid #dbdbdb;
+  background: #f7f7f7;
+  font-weight: 700;
+}
+
+.order_table td {
+  height: 31px;
+  padding: 15px 10px 14px 10px;
+  color: #777777;
+  border-bottom: 1px solid #dbdbdb;
+  border-left: 1px dotted #ededed;
+  background: #ffffff;
+  vertical-align: middle;
+  font-weight: 600;
+}
+
+.order_td_item {
+  text-align: left;
+}
+
+.order_td_amount {
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+
+.order_price_sum {
+  margin: 30px 0 0 0;
+  padding: 20px 40px 25px 40px;
+  border: 2px solid #d6d6d6;
+  height: 150px;
+}
+
+.order_sum_cont {
+  display: table;
+  float: right;
+  text-align: right;
+}
+
+.order_sum_list {
+  position: relative;
+  margin-top: 15px;
+}
+
+.order_sum_list dl {
+  display: table-cell;
+  padding: 5px 10px 5px 10px;
+  font-size: 16px;
+  text-align: right;
+}
+
+.order_sum_list dl dt {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.order_sum_list dl dd {
+  font-size: 30px;
+  width: 130px;
+  height: 40px;
+  margin-top: 10px;
+  font-weight: bolder;
+}
+
+.order_sum_list span {
+  display: table-cell;
+  padding: 0 15px 0 15px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.order_zone_tit {
+  line-height: 1.5;
+  color: #333;
+  font-family: "Noto Sans KR", "Nanum Gothic", "나눔고딕", Malgun Gothic,
+    "맑은 고딕", AppleGothic, Dotum, "돋움", sans-serif;
+  margin: 0 0 0 0;
+  padding: 0 0 10px 0;
+  font-size: 16px;
+}
+.order_view_info h4 {
+  margin: 50px 0 0 0;
+}
+.order_item_info {
+  text-align: center;
+  height: 35px;
+  margin-top: 10px;
+}
+.order_table_type .table_left {
+  border-top: 1px solid #999999;
+}
+.order_table_type table {
+  width: 100%;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: collapse;
+  text-align: center;
+}
+.order_cont .table_left th {
+  padding: 15px 10px 14px 30px;
+}
+.order_table_type .table_left th {
+  padding: 15px 10px 14px 20px;
+  width: 20%;
+  border-top: none 0;
+  background: #f7f7f7;
+  text-align: left;
+}
+.order_table_type th {
+  padding: 9px 10px 10px 10px;
+  border-top: 1px solid #999999;
+  border-bottom: 1px solid #dbdbdb;
+  background: #f7f7f7;
+}
+
+.order_cont input[type="text"] {
+  width: 220px;
+}
+
+.order_table_type .table_left td {
+  height: 31px;
+  padding: 12px 10px 11px 15px;
+  text-align: left;
+}
+.order_table_type td {
+  height: 31px;
+  padding: 15px 10px 14px 10px;
+  color: #777777;
+  border-bottom: 1px solid #dbdbdb;
+  border-left: 1px dotted #ededed;
+  background: #ffffff;
+}
+
+.order_item_img img {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* --------- 배송정보 --------- */
+/* 배송지확인 */
+.order_cont table ul {
+  width: 100%;
+  height: 30px;
+}
+
+.addr_radio li {
+  width: 150px;
+  height: 30px;
+  float: left;
+  display: flex;
+  align-items: center;
+}
+
+.order_cont table ul .btn_gray_list {
+  display: inline-block;
+}
+/* 받으실 곳 */
+#contents .member_address .address_postcode {
+  overflow: hidden;
+  position: relative;
+}
+
+.order_readonly {
+  outline: none;
+  border: none;
+  cursor: default;
+}
+
+.order_readonly_addr1, .order_readonly_addr2 {
+  outline: none;
+  border: none;
+  cursor: default;
+  width: 500px !important;
+}
+
+.order_input_addr1, .order_input_addr2 {
+  width: 500px !important;
+}
+
+.order_input_addr1, .order_input_post {
+  cursor: default;
+  outline: none;
+}
+
+.order_input_name, .order_input_post, .order_input_addr1, .order_input_addr2, .order_input_phone {
+  border: 2px solid lightgray;
+  padding: 0 10px;
+  outline: none;
+}
+
+.order_input_name:focus, .order_input_addr2:focus, .order_input_phone:focus {
+  border: 2px solid #b5d692;
+}
+
+.order_addr2_wrap {
+  margin-top: 10px;
+}
+
+.form_element ul li {
+  margin: 0px 10px;
+}
+
+#contents .member_address .address_postcode input {
+  float: left;
+}
+#contents .member_address .address_postcode .old_post_code {
+  position: absolute;
+  top: 6px;
+  left: 55px;
+  color: #333333;
+}
+#contents .member_address .address_postcode .btn_post_search {
+  float: left;
+  margin: 0 0 0 5px;
+  padding: 5px 10px 5px 10px;
+  border: 1px solid #989898;
+}
+#contents .member_address .address_input {
+  float: left;
+  width: 98%;
+}
+
+.address_input {
+  margin-top: 10px;
+}
+
+.address_input input {
+  margin-right: 5px;
+}
+
+#contents .member_address .address_input input:first-child {
+  width: 400px;
+}
+#contents .member_address .address_input input {
+  width: 250px;
+  margin: 10px 0 0 0;
+}
+/* 남기실 말씀 */
+.td_last_say input[type="text"] {
+  width: 90%;
+}
+/* 회원정보 반영 */
+.order_cont .order_table_type .form_element label.check_s {
+  padding-left: 22px;
+}
+.order_cont .order_table_type .member_info_delivery em {
+  color: #329cff;
+}
+.order_cont .order_table_type .member_info_apply span {
+  color: #979797;
+}
+
+.order_payment_sum {
+  color: #444444;
+  font-size: 18px;
+}
+.order_cont .order_benefit_list {
+  color: #333333;
+}
+.order_cont .order_benefit_list li {
+  display: block;
+}
+.order_cont .order_benefit_list li span {
+  color: #777777;
+}
+.order_cont .order_benefit_list .order_benefit_sale {
+  padding: 0 0 5px 0;
+}
+.order_cont .order_benefit_list .order_benefit_mileage {
+}
+.order_cont .order_benefit_list .order_benefit_sale em {
+  padding: 0 5px 1px 20px;
+}
+.order_cont .order_benefit_list .order_benefit_mileage em {
+  padding: 0 5px 1px 20px;
+}
+.order_cont .table_left tr td .add_currency {
+  color: #717171;
+}
+
+/* --------- 결제수단 선택/결제 --------- */
+.payment_progress {
+}
+.payment_progress .order_zone_tit > p {
+  padding: 2px 0 0 0;
+  color: #000;
+  font-size: 12px;
+}
+.payment_progress_list {
+  padding: 10px 0 10px 0;
+  border-top: 1px solid #999999;
+}
+.payment_progress_list dl {
+  display: block;
+  padding: 20px 0 15px 0;
+  font-size: 0;
+  border-bottom: 1px solid #dbdbdb;
+  vertical-align: top;
+}
+
+.payment_progress_list dt {
+  display: inline-block;
+  width: 180px;
+  padding: 0 0 0 24px;
+  font-size: 14px;
+  font-weight: bold;
+  vertical-align: top;
+}
+.payment_progress_list dd {
+  display: inline-block;
+  font-size: 12px;
+}
+.payment_progress_cont {
+}
+/* 라디오 버튼  선택 */
+.payment_progress .payment_progress_select {
+  font-size: 0;
+}
+
+/* 카카오 결제 정렬 */
+
+.payment_progress .payment_progress_select li {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+.choice_s {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.choice_s img {
+  margin-left: 4px;
+}
+
+/*  */
+
+/* ----- 일반결제 ----- */
+.general_payment {
+}
+.general_payment dd {
+  min-width: 520px;
+}
+
+/* 결제금액, 필수체크 */
+.payment_final {
+  margin: 30px 0 0 0;
+}
+.payment_final_total {
+  padding: 13px 46px 20px 0;
+  border: 2px solid #d6d6d6;
+  text-align: right;
+}
+.payment_final_total dl {
+  display: inline-block;
+  font-size: 0;
+}
+.payment_final_total dt {
+  display: inline-block;
+  padding: 0 15px 0 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+.payment_final_total dd {
+  display: inline-block;
+  font-size: 30px;
+  color: #000;
+}
+.payment_final .payment_final_check {
+  padding: 30px 0 20px 0;
+  text-align: center;
+}
+.payment_final .payment_final_check {
+}
+.payment_final .form_element label.check_s em b {
+  color: #000;
+}
+
+.btn_center_box {
+  text-align: center;
+  margin-top: 10px;
+}
+.btn_order_buy {
+  display: inline-block;
+  width: 300px;
+  height: 61px;
+  line-height: 59px;
+  color: #fff;
+  font-size: 20px;
+  border: 1px solid #000;
+  background: #000;
+  text-align: center;
+}
+
+.btn_order_cancel {
+  display: inline-block;
+  width: 300px;
+  height: 61px;
+  line-height: 59px;
+  color: #fff;
+  font-size: 20px;
+  border: 1px solid #000;
+  background: #000;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.member_address .address_postcode .btn_post_search {
+  margin: 0 0 0 5px;
+  padding: 5px 10px 5px 10px;
+  border: 1px solid #989898;
+}

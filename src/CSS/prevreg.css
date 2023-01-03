@@ -1,0 +1,171 @@
+.firstRegContainer {
+  position: absolute;
+  top: 20%;
+  left: 45%;
+  background-color: white;
+  width: 600px;
+  height: 550px;
+  border: 1px solid gainsboro;
+  margin: -150px 0px 0px -200px;
+}
+
+.firstRegBoxOne {
+  width: 470px;
+
+  line-height: 70px;
+  height: 70px;
+
+  background-color: white;
+
+  border: 1px solid gainsboro;
+
+  position: absolute;
+
+  top: 18%;
+
+  left: 19%;
+
+  margin: -50px 0 0 -50px;
+
+  text-align: center;
+
+  font-weight: 600;
+
+  font-size: 20px;
+
+  color:black;
+}
+
+.firstRegBoxOne:hover {
+  cursor: pointer;
+  color:grey;
+}
+
+.firstRegBoxTwo {
+  width: 470px;
+
+
+  line-height: 70px;
+  height: 70px;
+
+  background-color: white;
+
+  border: 1px solid gainsboro;
+
+  position: absolute;
+
+  top: 40%;
+
+  left: 19%;
+
+  margin: -45px 0 0 -50px;
+
+  text-align: center;
+
+  font-weight: 600;
+  font-size: 20px;
+
+  color: darkgrey
+}
+.firstRegBoxThree {
+  width: 470px;
+
+
+  line-height: 70px;
+  height: 70px;
+
+  background-color: white;
+
+  border: 1px solid gainsboro;
+
+  position: absolute;
+
+  top: 53%;
+
+  left: 19%;
+
+  margin: -40px 0 0 -50px;
+
+  text-align: center;
+
+  font-weight: 600;
+  font-size: 20px;
+
+  color: darkgrey
+}
+.firstRegBoxFour {
+  width: 470px;
+
+
+  line-height: 70px;
+  height: 70px;
+
+  background-color: white;
+
+  border: 1px solid gainsboro;
+
+  position: absolute;
+
+  top: 65%;
+
+  left: 19%;
+
+  margin: -30px 0 0 -50px;
+
+  text-align: center;
+
+  font-weight: 600;
+  font-size: 20px;
+
+  color: darkgrey
+}
+hr {
+  width: 470px;
+  margin:130px 65px;
+}
+
+.facebookReg {
+  border:1px solid;
+  width:82px;
+  line-height: 70px;
+  height: 70px;
+  position:absolute;
+}
+.facebookLogo {
+  width:78px;
+  height:68px;
+}
+
+.naverReg {
+  border:1px solid;
+  width:82px;
+  line-height: 70px;
+  height: 70px;
+  position:absolute;
+}
+.naverLogo {
+  width:80px;
+  height:68px;
+}
+.kktReg {
+  border:1px solid;
+  width:82px;
+  line-height: 70px;
+  height: 70px;
+  position:absolute;
+}
+.kktLogo {
+  width:78px;
+  height:68px;
+}
+.underInfo {
+  position:absolute;
+  bottom:80px;
+  right:20px;
+  color:red;
+}
+/* .memberBenefit {
+  position:absolute;
+  height:220px;
+  width:500px;
+} */
