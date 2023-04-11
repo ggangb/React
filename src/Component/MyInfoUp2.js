@@ -61,7 +61,7 @@ function MyInfoUp2({ memIdx }) {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/member/myinfo/${memIdx}`)
+      .get(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/member/myinfo/${memIdx}`)
       .then((response) => {
         setData(response.data);
         setMemName(response.data.memName);
@@ -92,7 +92,7 @@ function MyInfoUp2({ memIdx }) {
       inputPhone.current.focus();
     } else {
       axios
-      .put(`http://localhost:8080/member/updateinfo/${memIdx}`, {
+      .put(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/member/updateinfo/${memIdx}`, {
           memIdx: memIdx,
           memName: memName,
           memPhone: memPhone,

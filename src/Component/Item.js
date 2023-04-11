@@ -61,7 +61,7 @@ function Item() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/item")
+      .get(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/item`)
       .then((response) => {
         setItems(response.data);
       })
@@ -91,7 +91,7 @@ function Item() {
   const cartHanddler = () => {
     if (isLogin === true) {
       axios
-        .post("http://localhost:8080/cart/insert", cartDto)
+        .post(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/cart/insert`, cartDto)
         .then((response) => {
           alert("장바구니 추가완료");
         })
@@ -105,12 +105,18 @@ function Item() {
   };
 
   const buyHanddler = () => {
+    if (isLogin === true) {
     navigate("/order", { state: { orderDto } });
+    } else {
+      alert("로그인 후 이용하세요.");
+      navigate("/login");
+    }
   };
   const moveToFocus = useRef([]);
+
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/item/${itemNum}`)
+      .get(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/item/${itemNum}`)
       .then((response) => {
         setData(response.data);
         setItemPrice(response.data.itemPrice);
@@ -122,30 +128,7 @@ function Item() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/item/${itemNum}`)
-      .then((response) => {
-        setData(response.data);
-        setItemPrice(response.data.itemPrice);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, [itemNum]);
-
-  useEffect(() => {
-    axios
-      .get(`http://localhost:8080/review/${itemNum}`)
-      .then((review) => {
-        setDatas2(review.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, [itemNum]);
-
-  useEffect(() => {
-    axios
-      .get(`http://localhost:8080/review/list/${itemNum}`)
+      .get(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/review/list/${itemNum}`)
       .then((review) => {
         setDatas2(review.data);
       })
@@ -156,7 +139,7 @@ function Item() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/qna/${itemNum}`)
+      .get(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/qna/${itemNum}`)
       .then((qna) => {
         setQnaDatas(qna.data);
 
@@ -185,6 +168,7 @@ function Item() {
             {/* </div> */}
           </div>
           <div className="item_price">
+            
             <span>상품가격</span>
             <strong>{price2}</strong>
             <span>원</span>

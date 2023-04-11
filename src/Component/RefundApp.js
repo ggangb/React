@@ -25,7 +25,7 @@ function RefundApp({ memIdx, itemName, orderNum, itemPrice, orderlistIdx, setOpe
         if (refundReason == 'default') {
             alert('반품 사유를 선택해주세요.');
         } else if (window.confirm('해당 제품을 반품신청 하시겠습니까?')) {
-            axios.post(`http://localhost:8080/mypage/myorderlist/refundgo/${orderlistIdx}`, {
+            axios.post(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/mypage/myorderlist/refundgo/${orderlistIdx}`, {
                 memIdx: memIdx,
                 itemName: itemName,
                 orderlistIdx: orderlistIdx,

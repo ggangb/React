@@ -25,19 +25,17 @@ function MyInfoDel2({memIdx}) {
 
     const handlerClickDelete = () => {
         if(window.confirm('회원탈퇴 시 계정 복구가 불가합니다. \n정말 탈퇴하시겠습니까?')){
-            axios.delete(`http://localhost:8080/member/delete/${memIdx}`,
+            axios.delete(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/member/delete/${memIdx}`,
             {   
                 'memIdx': memIdx
                 
             })
             .then(response => {
                 if (response.status === 200) {
-                    console.log(memIdx);
                     alert("탈퇴가 완료되었습니다. \n이용해주셔서 감사합니다.");
                     sessionStorage.clear();
                     navigate('/');
                 } else {
-                    console.log(memIdx);
                     alert("탈퇴 실패!");
                     return;
                 }

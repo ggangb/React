@@ -83,7 +83,7 @@ const Step4 = () => {
     }
     else {
       e.preventDefault();
-      axios.post("http://localhost:8080/result", {
+      axios.post(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/result`, {
         "resultUser": nameStr,
         "memEmail": sessionStorage.getItem("email"),
         "resultLiver": getValue("간"),

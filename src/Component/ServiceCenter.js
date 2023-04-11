@@ -27,9 +27,8 @@ function ServiceCenter() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/service")
+      .get(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/service`)
       .then((response) => {
-        console.log(response);
         setFaq(response.data);
         setAllFaq(response.data);
       })

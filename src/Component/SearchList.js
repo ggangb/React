@@ -4,26 +4,23 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "../CSS/ItemList.css";
 import Paging from "./Paging";
-function ItemList() {
+function SearchList() {
   const location = useLocation();
-  const organs = location.state.organs;
+  const keyword = location.state.keyword;
   const [datas, setDatas] = useState([]);
-  const [items, setItems] = useState([]);
   const [select, setSelect] = useState('default');
-
-  const [itemShowNum, setItemShowNum] = useState(10);
   const [page, setPage] = useState(1);
+  const [itemShowNum, setItemShowNum] = useState(10);
+
   const offset = (page - 1) * 10;
   const [pagecount, setPageCount] = useState(10);
   const count = datas.length;
-  const count1 = items.length;
+
   
 
   const handlerSelect = (e) => {
     setSelect(e.target.value);
   }
-
-  const [select2, setSelect2] = useState('default2');
 
   const handlerSelect2 = (e) => {
     setPageCount(e.target.value);
@@ -32,33 +29,22 @@ function ItemList() {
 
   useEffect(() => {
     axios
-      .get(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/item`)
+      .get(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/searchlist/${keyword}`)
       .then((response) => {
         setDatas(response.data);
       })
       .catch((error) => console.log(error));
-  }, []);
-  useEffect(() => {
-    axios
-      .get(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/item/organs/${organs}`)
-      .then((response) => {
-        setItems(response.data);
-      })
-      .catch((error) => console.log(error));
-  }, [organs]);
-  const itemCount = organs === null ? datas : items;
+  }, [keyword]);
+
+  const itemCount = datas === null ? 0 : datas;
+
   return (
     <>
       <div className="itemlist_container">
         <div className="itemlist_contents">
           <div className="itemlist_main">
             <div className="itemlist_title">
-              {organs === null ? <h2>전체상품</h2> :
-
-                <>
-                  <h2>{organs}</h2>
-                </>
-              }
+                  <h2>{keyword}</h2>
             </div>
             <div className="itemlist_box">
               <div className="itemlist_inbox">
@@ -102,30 +88,12 @@ function ItemList() {
             </div> */}
             <div className="itemlist_items">
               <div className="itemlist_items_cont">
-                {organs === null
+                {datas.length === 0
                   ? <ul>
-                    {datas.slice(offset, offset + itemShowNum).map((item, idx) => {
-                      return <Link key={idx} to={`/item/${item.itemNum}`} state={{ item: datas }}>
-                        <li>
-                          <div className="itemlist_items_box">
-                            <div className="itemlist_items_img">
-                              <img src={process.env.REACT_APP_API_URL + item.itemThumb} />
-                            </div>
-                          </div>
-                          <div className="itemlist_info">
-                            <div className="itemlist_info_title">
-                              <strong>{item.itemName}</strong>
-                            </div>
-                            <div className="itemlist_info_money">
-                              <strong>{[item.itemPrice].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}원</strong>
-                            </div>
-                          </div>
-                        </li>
-                      </Link>;
-                    })}
+                    <h2>검색 결과가 없습니다.</h2>
                   </ul>
                   : <ul>
-                    {items.slice(offset, offset + 10).map((item, idx) => {
+                    {datas.slice(offset, offset + 10).map((item, idx) => {
                       return <Link key={idx} to={`/item/${item.itemNum}`} state={{ item: datas }}>
                         <li>
                           <div className="itemlist_items_box">
@@ -148,9 +116,9 @@ function ItemList() {
               </div>
             </div>
 
-            {organs === null ?  <div><Paging page={page} setPage={setPage} count={count} pagecount={pagecount} /></div>
+            {datas === null ?  null
             :
-            <div><Paging page={page} setPage={setPage} count={count1} pagecount={pagecount} /></div>
+            <div><Paging page={page} setPage={setPage} count={count} pagecount={pagecount} /></div>
               }
           </div>
         </div>
@@ -158,4 +126,4 @@ function ItemList() {
     </>
   );
 }
-export default ItemList;
+export default SearchList;

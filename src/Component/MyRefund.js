@@ -12,7 +12,7 @@ function MyRefund() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/mypage/myrefund/${memIdx}`)
+      .get(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/mypage/myrefund/${memIdx}`)
       .then((response) => {
         setDatas(response.data);
       })
@@ -31,7 +31,7 @@ function MyRefund() {
         refundIdx: refundIdx,
       };
       axios
-        .post("http://localhost:8080/mypage/myrefund/refundcancle", refundDto)
+        .post(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/mypage/myrefund/refundcancle`, refundDto)
         .then((response) => {
           if (response.status === 200) {
             alert("반품신청을 철회하였습니다.");

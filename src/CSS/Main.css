@@ -22,8 +22,8 @@
 .swiper-button-prev,
 .swiper-button-next {
   color: #b5d692 !important;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 100px !important;
+  padding-right: 100px !important;
 }
 
 .main_items_wrap {

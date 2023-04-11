@@ -35,7 +35,7 @@ function ReviewWrite({ setOpen, handlerClose, itemName, orderNum ,orderlistIdx, 
             setContents('');
             inputContents.current.focus();
         } else {
-            axios.put(`http://localhost:8080/mypage/myreview/write/${orderlistIdx}`, { 'orderlistIdx': orderlistIdx ,'orderNum': orderNum, 'reviewContents': contents })
+            axios.put(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/mypage/myreview/write/${orderlistIdx}`, { 'orderlistIdx': orderlistIdx ,'orderNum': orderNum, 'reviewContents': contents })
                 .then(response => {
                     if (response.status === 200) {
                         alert('정상적으로 등록되었습니다.');

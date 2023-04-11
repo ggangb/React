@@ -18,7 +18,6 @@ const ItemWrite = () => {
   const saveDetailImg = (event) => {
     setSelectedDetail(event.target.files[0]);
   };
-  console.log(selectedThumb);
 
   const onFileUpload = () => {
     const formData = new FormData();
@@ -29,8 +28,7 @@ const ItemWrite = () => {
 
     formData.append("itemsDto", JSON.stringify(itemInfo)); // 직렬화하여 객체 저장
 
-    console.log(itemInfo)
-    axios.post("http://localhost:8080/admin/item/write", formData, {
+    axios.post(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/admin/item/write`, formData, {
       headers: {
         'Authorization': `Bearer ${sessionStorage.getItem("token")}`
       }
@@ -51,7 +49,6 @@ const ItemWrite = () => {
   const selectCategoryHandler = (e) => {
     setCategorySelect(e.target.value);
   };
-  console.log(categorySelect);
   const [itemInfo, setItemInfo] = useState({
     itemNum: "",
     itemName: "",
@@ -72,7 +69,6 @@ const ItemWrite = () => {
       ...itemInfo,
       [name]: value,
     });
-    console.log(itemInfo);
   };
 
   return (

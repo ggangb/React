@@ -1,14 +1,17 @@
+import { useState } from "react";
+import { MdSettingsInputAntenna } from "react-icons/md";
 import { Link, useNavigate } from "react-router-dom";
 import "../CSS/Header.css";
 import Nav from "./Nav";
 
 const Header = () => {
   const navigate = useNavigate();
-
+  const [keyword, setKeyword] = useState("");
+  const onChangeKeyword = (e) => setKeyword(e.target.value) ;
+  
   if (window.location.pathname === "/qnaWrite") return null;
 
   //조건부 렌더링으로 로그인 여부에 따라 다른 헤더를 보여준다.
-
   const isLogin = sessionStorage.getItem("token") ? true : false;
   const logout = () => {
     sessionStorage.clear();
@@ -18,7 +21,6 @@ const Header = () => {
   };
 
   const isAdmin = sessionStorage.getItem("role") === "ROLE_ADMIN" ? true : false;
-
   return (
     <>
       <div id="header">
@@ -32,14 +34,17 @@ const Header = () => {
             <div className="header_search_area">
               <input
                 type="text"
+                onChange={onChangeKeyword}
                 className="header_search_bar"
                 spellCheck="false"
                 maxLength="64"
                 autoComplete="off"
               />
-              <button type="submit" className="header_search_btn">
+            <Link to="/searchlist" state={{ keyword: keyword }}>
+              <button className="header_search_btn">
                 <div className="header_search_img" />
               </button>
+            </Link>
             </div>
           </div>
           <div className="header_btn_wrap">

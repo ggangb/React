@@ -7,7 +7,7 @@ function Qna({ value }) {
   const [data, setData] = useState({});
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/qna/contents/${qnaIdx}`)
+      .get(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/qna/contents/${qnaIdx}`)
       .then((response) => {
         setData(response.data);
       })
@@ -16,7 +16,6 @@ function Qna({ value }) {
       });
   }, []);
 
-  console.log(data);
 
   return (
     <tr className="qna-modal">

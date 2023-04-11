@@ -7,6 +7,7 @@ import "../CSS/login.css";
 import { BsWindowSidebar } from "react-icons/bs";
 import { useNavigate } from "react-router-dom/dist";
 import { useEffect } from "react";
+import { KAKAO_AUTH_URL } from "./OAuth";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -19,7 +20,7 @@ function Login() {
     e.preventDefault();
 
 
-    axios.post("http://localhost:8080/login", { "memEmail": email, "memPw": password })
+    axios.post(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/login`, { "memEmail": email, "memPw": password })
       .then(response => {
         if (response.status === 200 && response.data !== "") {
             
@@ -33,7 +34,6 @@ function Login() {
                 return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
             }).join(''));
             const memberInfo = JSON.parse(jsonPayload);
-            console.log(memberInfo);
              sessionStorage.setItem("name", memberInfo.name);
              sessionStorage.setItem("email", memberInfo.email);
              sessionStorage.setItem("idx",memberInfo.idx);
@@ -120,9 +120,9 @@ function Login() {
               <div className="sns_box">
                 <ul className="btn_sns_join">
                   <li>
-                    <Link to="/kktLogin">
+                    <a href={KAKAO_AUTH_URL}>
                       <img src="/images/kakao.png" alt="" />
-                    </Link>
+                    </a>
                   </li>
                   <li>
                     <Link to="/naverLogin">

@@ -10,7 +10,7 @@ function NoticeDetail() {
     const [data, setData] = useState([]);
 
     useEffect(()=> {
-        axios(`http://localhost:8080/notice/${noticeIdx}`)
+        axios(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/notice/${noticeIdx}`)
         .then((response)=> {
             setData(response.data)
         }) .catch((error) => {

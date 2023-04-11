@@ -36,7 +36,7 @@ function ReviewUpdate({ setOpen2, handlerClose2, reviewIdx ,itemThumb }) {
 
     useEffect(() => {
         sendReview();
-        axios.get(`http://localhost:8080/mypage/myreview/modify/${reviewIdx}`)
+        axios.get(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/mypage/myreview/modify/${reviewIdx}`)
         .then(response => {
             setData(response.data);
             inputContents.current.focus();
@@ -50,7 +50,7 @@ function ReviewUpdate({ setOpen2, handlerClose2, reviewIdx ,itemThumb }) {
             setContents('');
             inputContents.current.focus();
         } else {
-            axios.put(`http://localhost:8080/mypage/myreview/modify/${reviewIdx}`, { 'reviewIdx': reviewIdx, 'reviewContents': contents })
+            axios.put(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/mypage/myreview/modify/${reviewIdx}`, { 'reviewIdx': reviewIdx, 'reviewContents': contents })
                 .then(response => {
                     if (response.status === 200) {
                         alert('수정이 완료되었습니다.');

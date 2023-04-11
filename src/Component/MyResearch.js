@@ -13,7 +13,7 @@ function MyPageResearch() {
 
 
     useEffect(() => {
-        axios.get('http://localhost:8080/mypage/myresearch')
+        axios.get(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/mypage/myresearch`)
             .then(response => {
                 setDatas(response.data);
             })
@@ -33,7 +33,7 @@ function MyPageResearch() {
 
     const handlerClickDelete = () => {
         checkedIdx.map(idx => {
-            axios.delete(`http://localhost:8080/mypage/result/${idx}`)
+            axios.delete(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/mypage/result/${idx}`)
                 .then(response => {
                     if (response.status === 200) {
                         alert("정상적으로 삭제되었습니다.");

@@ -37,7 +37,7 @@ const Banner = () => {
       </Swiper>
       <div className="main_banner_content">
         <img className="main_banner_img2" src="/images/mainImg.png" />
-        <img className="main_banner_img" src="/images//research.png" />
+        <img className="main_banner_img" src="/images/research.png" />
         <div className="main_info_banner">
           <img className="main_banner_img3" src="/images/mainImg3.png" />
           <img className="main_banner_img4" src="/images/mainImg4.png" />

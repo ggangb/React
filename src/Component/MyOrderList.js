@@ -47,7 +47,7 @@ function MyOrderList() {
   const handlerCancelNow = (oderlistIdx) => {
     if (window.confirm("해당 상품의 주문을 취소하시겠습니까?")) {
       axios
-        .put(`http://localhost:8080/mypage/myorderlist/now/${oderlistIdx}`)
+        .put(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/mypage/myorderlist/now/${oderlistIdx}`)
         .then((response) => {
           if (response.status === 200) {
             alert("취소가 완료되었습니다.");
@@ -65,7 +65,7 @@ function MyOrderList() {
       window.confirm("발송 준비 중인 상품입니다. \n취소 신청 하시겠습니까?")
     ) {
       axios
-        .put(`http://localhost:8080/mypage/myorderlist/plz/${oderlistIdx}`)
+        .put(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/mypage/myorderlist/plz/${oderlistIdx}`)
         .then((response) => {
           if (response.status === 200) {
             alert(
@@ -89,7 +89,7 @@ function MyOrderList() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/mypage/myorderlist/${memIdx}`)
+      .get(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/mypage/myorderlist/${memIdx}`)
       .then((response) => {
         setDatas(response.data);
         countCheck(response.data);
@@ -117,7 +117,7 @@ function MyOrderList() {
   const handlerDelete = (orderlistIdx) => {
     if (window.confirm("내역을 삭제하시겠습니까?")) {
       axios
-        .put(`http://localhost:8080/mypage/myorderlist/delete/${orderlistIdx}`)
+        .put(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/mypage/myorderlist/delete/${orderlistIdx}`)
         .then((response) => {
           if (response.status === 200) {
             alert("삭제 완료되었습니다.");
@@ -147,13 +147,13 @@ function MyOrderList() {
     ) {
       axios
         .put(
-          `http://localhost:8080/mypage/myorderlist/purchase/${orderlistIdx}`
+          `http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/mypage/myorderlist/purchase/${orderlistIdx}`
         )
         .then((response) => {
           if (response.status === 200) {
             axios
               .post(
-                `http://localhost:8080/mypage/myorderlist/purchase/${orderlistIdx}`,
+                `http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/mypage/myorderlist/purchase/${orderlistIdx}`,
                 {
                   memIdx: memIdx,
                   itemName: itemName,

@@ -20,7 +20,7 @@ function AdminOrder() {
     const stateChange = (orderlistIdx) => {
 
         axios.post(
-            `http://localhost:8080/admin/orderstate/${orderlistIdx},${stateSelect}`,
+            `http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/admin/orderstate/${orderlistIdx},${stateSelect}`,
             null,
             { headers: { 'Authorization': `Bearer ${sessionStorage.getItem("token")}` } }
         )
@@ -32,7 +32,7 @@ function AdminOrder() {
     }
 
     const stateCancle = (orderlistIdx) => {
-        axios.post(`http://localhost:8080/admin/ordercancle/${orderlistIdx}`, null, {
+        axios.post(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/admin/ordercancle/${orderlistIdx}`, null, {
             headers: {
                 'Authorization': `Bearer ${sessionStorage.getItem("token")}`
             }
@@ -45,7 +45,7 @@ function AdminOrder() {
     }
 
     useEffect(() => {
-        axios.get("http://localhost:8080/admin/order", {
+        axios.get(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/admin/order`, {
             headers: {
                 'Authorization': `Bearer ${sessionStorage.getItem("token")}`
             }

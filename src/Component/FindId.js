@@ -15,20 +15,15 @@ function FindID() {
   const [phoneNum, setPhoneNum] = useState("");
   const navigate = useNavigate();
 
-  useEffect(() => {
-    console.log(name);
-  })
 
   const onChangeName = (e) => setName(e.target.value);
   const onChangePhoneNum = (e) => setPhoneNum(e.target.value);
 
   const clickFindID = (e) => {
-    console.log(e)
     e.preventDefault();
     // axios.get("http://localhost:8080/member/"+name+"/"+phoneNum)
-    axios.get(`http://localhost:8080/member/${name}/${phoneNum}`)
+    axios.get(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/member/${name}/${phoneNum}`)
     .then(response => {
-      console.log(response);
       if (response.status === 200) {
         navigate('/login');
         alert(`${name}님의 아이디는 ${response.data.memEmail}입니다.`);

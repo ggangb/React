@@ -12,7 +12,7 @@ export default function AdminReview() {
   const count = datas.length;
 
   useEffect(() => {
-    axios.get(`http://localhost:8080/admin/refund`, { 
+    axios.get(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/admin/refund`, { 
       headers: { 
       'Authorization': `Bearer ${sessionStorage.getItem("token")}` 
     }
@@ -25,7 +25,7 @@ export default function AdminReview() {
 
   const handlerRefund = (refundIdx) => {
     if(window.confirm('해당 주문 건을 환불처리 하시겠습니까?')){
-    axios.put(`http://localhost:8080/admin/refund/${refundIdx}`,null, { 
+    axios.put(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/admin/refund/${refundIdx}`,null, { 
       headers: { 
       'Authorization': `Bearer ${sessionStorage.getItem("token")}` 
     }

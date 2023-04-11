@@ -18,7 +18,7 @@ function MyCart() {
             memEmail : memEmail
 
         }
-        axios.post("http://localhost:8080/cart/update", cartListDto).then(response => {
+        axios.post(`${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/cart/update`, cartListDto).then(response => {
             setData(response.data);
             setCheckedLists([]);
         })
@@ -42,7 +42,7 @@ function MyCart() {
             memEmail : memEmail
 
         }
-        axios.post("http://localhost:8080/cart/update", cartListDto).then(response => {
+        axios.post(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/cart/update`, cartListDto).then(response => {
             setData(response.data);
             setCheckedLists([]);
         })
@@ -54,7 +54,7 @@ function MyCart() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/cart/${memEmail}`)
+      .get(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/cart/${memEmail}`)
       .then((response) => {
         setData(response.data);
       })

@@ -14,7 +14,7 @@ function AdminAuth() {
 
     const handlerOnClick = () => {
 
-        axios.post(`http://localhost:8080/admin/comparepw/${sessionStorage.getItem("idx")}`, `memPw=${memPw}`, { 
+        axios.post(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/admin/comparepw/${sessionStorage.getItem("idx")}`, `memPw=${memPw}`, { 
             headers: { 
             'Authorization': `Bearer ${sessionStorage.getItem("token")}` 
           }

@@ -7,9 +7,8 @@ function Review(props) {
   const [datas, setData] = useState({});
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/review/${reviewIdx}`)
+      .get(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/review/${reviewIdx}`)
       .then((response) => {
-        console.log(response);
         setData(response.data);
       })
       .catch((error) => {

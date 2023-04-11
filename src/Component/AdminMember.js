@@ -18,7 +18,7 @@ const AdminMember = () => {
   const [memberUpdate, setMemberUpdate] = useState(false);
   const [memIdx, setMemIdx] = useState(0);
   useEffect(() => {
-    axios.get("http://localhost:8080/admin/mem", { 
+    axios.get(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/admin/mem`, { 
       headers: { 
       'Authorization': `Bearer ${sessionStorage.getItem("token")}` 
     }
@@ -30,7 +30,7 @@ const AdminMember = () => {
 
   const memberDelete = (memIdx) => {
     if(window.confirm("정말 삭제하시겠습니까?"))
-    axios.post(`http://localhost:8080/admin/memberdelete/${memIdx}`,null,{
+    axios.post(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/admin/memberdelete/${memIdx}`,null,{
       headers: { 
         'Authorization': `Bearer ${sessionStorage.getItem("token")}` 
       }

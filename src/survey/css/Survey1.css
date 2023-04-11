@@ -21,7 +21,7 @@
 
 .inside .swiper-button-prev,
 .swiper-button-next {
-  color: white !important;
+  color: white ;
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -133,19 +133,19 @@
 }
 
 .prev {
-  width: 80px;
+  width: 150px;
   height: 100px;
   font-size: 23px;
-  margin: 0px 200px;
+  margin: 0px 175px;
   float: left;
 }
 
 .next {
-  width: 80px;
+  width: 150px;
   height: 100px;
   border-radius: 66px;
   font-size: 23px;
-  margin: 0px 200px;
+  margin: 0px 175px;
   float: left;
 }
 
@@ -158,6 +158,8 @@
   font-size: 40px;
   margin-top: 90px;
 }
+
+
 
 .radio {
   width: 20px;
@@ -260,6 +262,10 @@ form .likert li label {
 .rcmSwiper .swiper-wrapper {
   display: flex;
   align-items: center;
+}
+
+.wrap {
+  margin-top: -40px;
 }
 
 .rcmSwiper {
@@ -402,14 +408,13 @@ form .likert li label {
   margin-top: 20px;
 }
 .titleSurvey {
-  position: absolute;
-  margin-bottom: 30px;
+  position: relative;
   height: 50px;
   width: 100%;
   font-size: 45px;
   color: white;
   text-align: center;
-  margin-top: -435px;
+  margin-top: -26px;
 }
 
 .priceSurvey {

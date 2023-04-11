@@ -28,7 +28,7 @@ const AdminBoard = () => {
 
 
   useEffect(() => {
-    axios.get("http://localhost:8080/admin/qna", {
+    axios.get(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/admin/qna`, {
       headers: {
         'Authorization': `Bearer ${sessionStorage.getItem("token")}`
       }
@@ -56,8 +56,8 @@ const AdminBoard = () => {
           </thead>
           <tbody>
             {qnaDatas && qnaDatas.slice(offset, offset + 10).map((result, idx) => (
-              <>
-                <tr key={idx} onClick={() => { setQnaIdx(result.qnaIdx); }}>
+              <React.Fragment key={idx}>
+                <tr onClick={() => { setQnaIdx(result.qnaIdx); }}>
                   <td width="11%">{result.qnaIdx}</td>
                   <td width="16%">{result.itemNum}</td>
                   <td width="40%" onClick={() => { setQnaModal(!qnaModal); }}>{result.qnaTitle}</td>
@@ -68,7 +68,7 @@ const AdminBoard = () => {
                 {qnaModal === true && qnaIdx === result.qnaIdx ?
                   <AdminQnaModal value={result.qnaIdx} />
                   : null}
-              </>
+              </React.Fragment>
             ))}
           </tbody>
         </table>

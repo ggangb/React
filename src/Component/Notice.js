@@ -16,9 +16,8 @@ function Notice() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/notice")
+      .get(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/notice`)
       .then((response) => {
-        console.log(response);
         setData(response.data);
       })
       .catch((error) => console.log(error));

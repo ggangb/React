@@ -12,7 +12,7 @@ function MyPage() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/member/myinfo/${memIdx}`)
+      .get(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/member/myinfo/${memIdx}`)
       .then((response) => {
         setMemName(response.data.memName);
       })

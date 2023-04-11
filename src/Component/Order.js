@@ -74,7 +74,7 @@ function Order() {
     };
 
     useEffect(() => {
-        axios.get(`http://localhost:8080/member/${memEmail}`)
+        axios.get(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/member/${memEmail}`)
             .then(response => {
                 setData(response.data);
                 setName(response.data.memName);
@@ -106,35 +106,43 @@ function Order() {
 
     const [checked, setChecked] = useState(false);
 
-    const handlerClickSubmit = (e) => {
-        e.preventDefault();
-        if (!checked) {
-            alert('필수항목을 확인 후 체크해주세요.');
-        } else if (name.length < 1 || addr1.length < 1 || addr2.length < 1 || phoneNum.length < 1) {
-            alert('배송정보는 필수 입력 사항입니다.');
-        } else {
-            if (checkType === 'new') {
-                axios.post("http://localhost:8080/order/insert", orderInfo)
-                    .then(response => {
-                        alert('구매가 완료되었습니다.');
+    // const handlerClickSubmit = (e) => {
+    //     e.preventDefault();
+    //     if (!checked) {
+    //         alert('필수항목을 확인 후 체크해주세요.');
+    //     } else if (name.length < 1 || addr1.length < 1 || addr2.length < 1 || phoneNum.length < 1) {
+    //         alert('배송정보는 필수 입력 사항입니다.');
+    //     } else {
+    //         if (checkType === 'new') {
+    //             axios.post(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/order/insert`, orderInfo)
+    //                 .then(response => {
+    //                     alert('구매가 완료되었습니다.');
                         
-                        navigate("/mypage/myorderlist", { memIdx: { memIdx } })
-                    })
-                    .catch(error => { console.log(error); })
-                navigate("/mypage/myorderlist");
-            } else {
-                axios.post("http://localhost:8080/order/insert", orderInfo)
-                    .then(response => {
-                        alert('구매가 완료되었습니다.');
+    //                     navigate("/mypage/myorderlist", { memIdx: { memIdx } })
+    //                 })
+    //                 .catch(error => { console.log(error); })
+    //             navigate("/mypage/myorderlist");
+    //         } else {
+    //             axios.post(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/order/insert`, orderInfo)
+    //                 .then(response => {
+    //                     alert('구매가 완료되었습니다.');
                         
-                        navigate("/mypage/myorderlist", { memIdx: { memIdx } })
-                    })
-                    .catch(error => { console.log(error); })
-            }
+    //                     navigate("/mypage/myorderlist", { memIdx: { memIdx } })
+    //                 })
+    //                 .catch(error => { console.log(error); })
+    //         }
 
+    //     }
+
+    // }
+
+        const handlerClickSubmit = (e) => {
+            e.preventDefault();
+            axios.post(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/order/pay`, orderInfo)
+            .then(response => {
+                window.location.href = response.data.next_redirect_pc_url;
+            })
         }
-
-    }
     const checkedSame = () => {
         setCheckType('same');
     }

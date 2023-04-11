@@ -29,7 +29,7 @@ function FindPW() {
       memPhone:phoneNum,
       memEmail:email
     }
-    axios.post("http://localhost:8080/member/findpw",memInfo)
+    axios.post(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/member/findpw`,memInfo)
     .then(response => {
       if (response.status === 200) {
         setIsNow(true);

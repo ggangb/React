@@ -19,7 +19,6 @@ const AdminItemWrite = () => {
   const saveDetailImg = (event) => {
     setSelectedDetail(event.target.files[0]);
   };
-  console.log(selectedThumb);
 
   const onFileUpload = () => {
     const formData = new FormData();
@@ -30,8 +29,7 @@ const AdminItemWrite = () => {
 
     formData.append("itemsDto", JSON.stringify(itemInfo)); // 직렬화하여 객체 저장
 
-    console.log(itemInfo)
-    axios.post("http://localhost:8080/admin/item/write", formData, {
+    axios.post(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/admin/item/write`, formData, {
       headers: {
         'Authorization': `Bearer ${sessionStorage.getItem("token")}`
       }
@@ -52,7 +50,6 @@ const AdminItemWrite = () => {
   const selectCategoryHandler = (e) => {
     setCategorySelect(e.target.value);
   };
-  console.log(categorySelect);
   const [itemInfo, setItemInfo] = useState({
     itemNum: "",
     itemName: "",
@@ -73,7 +70,6 @@ const AdminItemWrite = () => {
       ...itemInfo,
       [name]: value,
     });
-    console.log(itemInfo);
   };
 
   return (
@@ -103,8 +99,6 @@ const AdminItemWrite = () => {
                       </td>
                     </tr>
                     <tr>
-                      <th>작성자</th>
-                      <td>글쓴이~</td>
                     </tr>
                     <tr>
                       <th>상품명</th>
@@ -115,7 +109,7 @@ const AdminItemWrite = () => {
                           placeholder="상품명을 입력해주세요"
                           onChange={getValue}
                           name="itemName"
-                        />
+                          required/>
                       </td>
                     </tr>
                     <tr>
@@ -127,7 +121,7 @@ const AdminItemWrite = () => {
                           placeholder="상품명을 입력해주세요"
                           onChange={getValue}
                           name="itemNum"
-                        />
+                          required/>
                       </td>
                     </tr>
                     <tr>
@@ -141,7 +135,7 @@ const AdminItemWrite = () => {
                           name="itemExpDate"
                           min="2022-11-01"
                           max="2050-12-31"
-                        />
+                          required/>
                       </td>
                     </tr>
                     <tr>
@@ -153,7 +147,7 @@ const AdminItemWrite = () => {
                           placeholder="상품명을 입력해주세요"
                           onChange={getValue}
                           name="itemPrice"
-                        />
+                          required/>
                       </td>
                     </tr>
                     <tr>
@@ -165,7 +159,7 @@ const AdminItemWrite = () => {
                           placeholder="상품명을 입력해주세요"
                           onChange={getValue}
                           name="itemMaker"
-                        />
+                          required/>
                       </td>
                     </tr>
                     <tr>
@@ -175,7 +169,7 @@ const AdminItemWrite = () => {
                           type="file"
                           name="itemThumb"
                           onInput={saveThumb}
-                        />
+                          required/>
                       </td>
                     </tr>
                     <tr>
@@ -185,7 +179,7 @@ const AdminItemWrite = () => {
                           type="file"
                           name="itemDetailImg"
                           onInput={saveDetailImg}
-                        />
+                          required/>
                       </td>
                     </tr>
                   </tbody>

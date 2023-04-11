@@ -8,7 +8,7 @@ const Items = () => {
   const [datas, setDatas] = useState([]);
 
   useEffect(()=> {
-    axios.get('http://localhost:8080/item')
+    axios.get(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/item`)
     .then(response => {
         setDatas(response.data);
     })

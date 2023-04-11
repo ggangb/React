@@ -17,7 +17,7 @@ const MemberDetail = () => {
 
   const handlerClickUpdate = () => {
     axios
-      .put(`http://localhost:8080/admin-mem/${memIdx}`, {
+      .put(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/admin-mem/${memIdx}`, {
         memName: memName,
         memDeletedYn: memDeletedYn,
       })
@@ -35,9 +35,8 @@ const MemberDetail = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/admin-mem/${memIdx}`)
+      .get(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/admin-mem/${memIdx}`)
       .then((response) => {
-        console.log(data);
         setData(response.data);
         setMemName(response.data.memName);
         setMemDeletedYn(response.data.memDeletedYn);

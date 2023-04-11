@@ -12,7 +12,7 @@ export default function AdminReview() {
   const count = datas.length;
 
   useEffect(() => {
-    axios.get(`http://localhost:8080/admin/review`, { 
+    axios.get(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/admin/review`, { 
       headers: { 
       'Authorization': `Bearer ${sessionStorage.getItem("token")}` 
     }
@@ -25,7 +25,7 @@ export default function AdminReview() {
 
   const handlerBlind = (reviewIdx) => {
     if(window.confirm('해당 리뷰를 블라인드 처리할까요?')){
-    axios.delete(`http://localhost:8080/admin/review/remove/${reviewIdx}`, { 
+    axios.delete(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/admin/review/remove/${reviewIdx}`, { 
       headers: { 
       'Authorization': `Bearer ${sessionStorage.getItem("token")}` 
     }
@@ -42,7 +42,7 @@ export default function AdminReview() {
 
   const handlerShow = (reviewIdx) => {
     if(window.confirm('해당 리뷰를 블라인드 해제할까요?')){
-      axios.delete(`http://localhost:8080/admin/review/show/${reviewIdx}`, { 
+      axios.delete(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/admin/review/show/${reviewIdx}`, { 
         headers: { 
         'Authorization': `Bearer ${sessionStorage.getItem("token")}` 
       }

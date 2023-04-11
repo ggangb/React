@@ -28,7 +28,7 @@ const AdminItemUpdate = (props) => {
 
     formData.append("itemsDto", JSON.stringify(itemInfo)); // 직렬화하여 객체 저장
 
-    axios.post("http://localhost:8080/admin/item/update", formData, {
+    axios.post(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}//admin/item/update`, formData, {
       headers: {
         'Authorization': `Bearer ${sessionStorage.getItem("token")}`
       }
@@ -98,8 +98,6 @@ const AdminItemUpdate = (props) => {
                     </td>
                   </tr>
                   <tr>
-                    <th>작성자</th>
-                    <td>글쓴이~</td>
                   </tr>
                   <tr>
                     <th>상품명</th>
@@ -111,7 +109,7 @@ const AdminItemUpdate = (props) => {
                         onChange={getValue}
                         name="itemName"
                         value={itemInfo.itemName}
-                      />
+                        required/>
                     </td>
                   </tr>
                   <tr>
@@ -124,7 +122,7 @@ const AdminItemUpdate = (props) => {
                         onChange={getValue}
                         name="itemNum"
                         value={itemInfo.itemNum}
-                      />
+                        required/>
                     </td>
                   </tr>
                   <tr>
@@ -139,7 +137,7 @@ const AdminItemUpdate = (props) => {
                         min="2022-11-01"
                         max="2050-12-31"
                         value={itemInfo.itemExpDate}
-                      />
+                        required/>
                     </td>
                   </tr>
                   <tr>
@@ -152,7 +150,7 @@ const AdminItemUpdate = (props) => {
                         onChange={getValue}
                         name="itemPrice"
                         value={itemInfo.itemPrice}
-                      />
+                        required/>
                     </td>
                   </tr>
                   <tr>
@@ -165,27 +163,27 @@ const AdminItemUpdate = (props) => {
                         onChange={getValue}
                         name="itemMaker"
                         value={itemInfo.itemMaker}
-                      />
+                        required/>
                     </td>
                   </tr>
                   <tr>
                     <th>제품썸네일</th>
-                    <td>
+                    <td>{itemInfo.itemThumb}
                       <input
                         type="file"
                         name="itemThumb"
                         onInput={saveThumb}
-                      />
+                        required/>
                     </td>
                   </tr>
                   <tr>
                     <th>제품메인이미지</th>
-                    <td>
+                    <td>{itemInfo.itemDetailImg}
                       <input
                         type="file"
                         name="itemDetailImg"
                         onInput={saveDetailImg}
-                      />
+                        required/>
                     </td>
                   </tr>
                 </tbody>

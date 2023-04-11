@@ -23,7 +23,7 @@ function AdminItem() {
 
     useEffect(() => {
         axios
-            .get("http://localhost:8080/admin/item", {
+            .get(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/admin/item`, {
                 headers: {
                     'Authorization': `Bearer ${sessionStorage.getItem("token")}`
                 }
@@ -35,7 +35,7 @@ function AdminItem() {
     }, []);
 
     const handlerDelete = (itemNum) => {
-        axios.post(`http://localhost:8080/admin/item/delete${itemNum}`, null, {
+        axios.post(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/admin/item/delete${itemNum}`, null, {
             headers: {
                 'Authorization': `Bearer ${sessionStorage.getItem("token")}`
             }

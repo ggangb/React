@@ -49,6 +49,8 @@ import PublicRoute from "./routeAuthor/PublicRoute";
 import QnaWrite from "./Component/QnaWrite";
 import AdminItem from "./Component/AdminItem";
 import AdminRouter from "./routeAuthor/AdminRouter";
+import SearchList from "./Component/SearchList";
+import KakaoAuthHandle from "./Component/KakaoAuthHandle";
 
 function App() {
   const memIdx = sessionStorage.getItem("idx");
@@ -61,6 +63,7 @@ function App() {
       <div id="wrapper">
         <Routes>
           <Route path="/" element={<Main />} />
+          <Route exact path="/user/kakao/callback" element={KakaoAuthHandle} />
           <Route
             path="/service/*"
             element={
@@ -102,6 +105,7 @@ function App() {
           <Route path="/intro" element={<Intro />} />
           <Route path="/cart" element={<MyCart />} />
           <Route path="/itemlist" element={<ItemList />} />
+          <Route path="/searchlist" element={<SearchList />} />
           <Route path="/join" element={<PublicRoute><Register/></PublicRoute>} />
           <Route path="/login" element={<PublicRoute><Login /></PublicRoute>} />
           <Route path="/private" element={<Private />} />

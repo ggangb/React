@@ -56,7 +56,7 @@ function MyReview() {
         }
     }
     useEffect(() => {
-        axios.get(`http://localhost:8080/mypage/myreview/able/${memIdx}`)
+        axios.get(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/mypage/myreview/able/${memIdx}`)
             .then(response => {
                 setDatas(response.data);
             })
@@ -67,7 +67,7 @@ function MyReview() {
 
     const handlerDidReview = () => {
         setBtnActive([false, true]);
-        axios.get(`http://localhost:8080/mypage/myreview/did/${memIdx}`)
+        axios.get(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/mypage/myreview/did/${memIdx}`)
             .then(response => {
                 setDatas2(response.data);
             })

@@ -15,7 +15,7 @@ function MyInfoUp1({ memIdx }) {
 
     const handlerOnClick = () => {
 
-        axios.post(`http://localhost:8080/member/comparepw/${memIdx}`, `memPw=${memPw}`)
+        axios.post(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/member/comparepw/${memIdx}`, `memPw=${memPw}`)
             .then(response => {
                 if (response.status === 200) {
                     setIsNow(true);

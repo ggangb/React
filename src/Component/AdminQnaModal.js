@@ -38,7 +38,6 @@ function AdminQnaModal(props) {
           }
         })
         .then(response => {
-            console.log(response);
             alert('답변완료');
             window.location.reload();
             props.closeModal();
@@ -54,13 +53,12 @@ function AdminQnaModal(props) {
 
     const handlerClickDelete = () => {
         if(window.confirm("정말 삭제하시겠습니까?"))
-        axios.post(`http://localhost:8080/admin/qna/${qnaIdx}`,null,{ 
+        axios.post(`http://${process.env.REACT_APP_REST_API_SERVER_IP_PORT}/admin/qna/${qnaIdx}`,null,{ 
             headers: { 
             'Authorization': `Bearer ${sessionStorage.getItem("token")}` 
           }
         })
         .then(response => { 
-            console.log(response);
             if (response.status === 200) {
                 window.location.reload();
                 alert("정상적으로 삭제되었습니다.");
